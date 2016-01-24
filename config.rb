@@ -52,17 +52,6 @@ end
 activate :directory_indexes
 page "/2013/*", directory_index: false
 
-# add blog functionality
-activate :blog do |blog|
-  blog.paginate = true
-  blog.prefix = "blog"
-  blog.layout = "blog_layout"
-  blog.tag_template = "blog/tag.html"
-  blog.calendar_template = "blog/calendar.html"
-end
-
-page "/feed.xml", layout: false
-
 # Methods defined in the helpers block are available in templates
 # helpers do
 #   def some_helper
