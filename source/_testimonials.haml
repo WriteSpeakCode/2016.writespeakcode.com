@@ -1,0 +1,5 @@
+%div.testimonials
+  - data.testimonials.each do |item|
+    %blockquote
+      %em #{item.quote}
+      %p.name - #{item.name}

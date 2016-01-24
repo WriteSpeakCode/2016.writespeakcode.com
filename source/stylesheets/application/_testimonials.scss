@@ -1,10 +1,26 @@
 .testimonials {
-  blockquote {
-    background-color: $brand-secondary;
-    &:nth-child(even) { background-color: $brand-accent; }
+  display: table;
+  border-spacing: 1em;
+  width: 100%;
+  height: 10em;
 
-    &:before {
-      margin-right: 0px;
+  blockquote {
+    background-color: $brand-accent;
+    border-left: none;
+    color: $white;
+    display: table-cell;
+    padding: 1em;
+    text-align: left;
+    vertical-align: top;
+    width: 33%;
+
+    &:nth-child(even) {
+      background-color: $brand-secondary;
+      color: $dark-gray;
     }
+  }
+
+  .name {
+    text-align: right;
   }
 }
