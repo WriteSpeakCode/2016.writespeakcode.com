@@ -24,7 +24,7 @@
       %header.navigation{ role: "banner" }
         .navigation-wrapper
           %h1.logo><
-            %a{ href: '/' }><
+            %a{ href: 'http://writespeakcode.com' }><
               = image_tag '/images/logo/writespeakcode-inverted.png', class: 'screen'
               = image_tag '/images/logo/writespeakcode.png', class: 'print'
           %a#js-mobile-menu.navigation-menu-button{ href: "javascript:void(0)" }
@@ -32,8 +32,8 @@
 
           %nav{ role: "navigation" }
             %ul#js-navigation-menu.navigation-menu.show
-              -#%li.nav-link.more.conference
-              -#  %a{ href:"/" } Conference
+              %li.nav-link.conference
+                %a{ href:"/" } Conference
               -#  %ul.submenu
               -#    %li
               -#      = link_to 'Our Sponsors!', 'sponsors'
@@ -85,9 +85,9 @@
               -#%li.nav-link.sponsors
               -#  %a{ href:"http://writespeakcode.com/sponsor" } Sponsor
 
-          %div.navigation-tools
-            %div.search-bar
-              = partial "mailchimp"
+          -#%div.navigation-tools
+          -#  %div.search-bar
+          -#    = partial "mailchimp"
 
       %section#main{ class: "#{current_page.data.page_class}" }
         = yield

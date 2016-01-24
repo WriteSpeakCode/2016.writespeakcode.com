@@ -1,19 +1,4 @@
 .index {
-  .navigation {
-    background-color: transparent;
-    text-align: center;
-    border: 0;
-
-    position: absolute;
-    top: 0;
-
-    .logo, .navigation-tools { display: none; }
-
-    nav {
-      float: none;
-    }
-  }
-
   #main {
     padding: 0;
 
@@ -124,8 +109,8 @@
       padding: 1em;
       height: auto;
 
-      a:not(.button) { 
-        @include colored-link($brand-primary); 
+      a:not(.button) {
+        @include colored-link($brand-primary);
       }
 
       h1 { font-size: $sm-h1-font-size; }
@@ -141,7 +126,7 @@
       }
     }
   }
-  
+
     .newsletter-signup {
       #mce-EMAIL {
         max-width: 290px;
