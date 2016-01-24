@@ -33,32 +33,32 @@
           %nav{ role: "navigation" }
             %ul#js-navigation-menu.navigation-menu.show
               %li.nav-link.conference
-                %a{ href:"/" } Conference
+                = link_to "Conference", "/index.html"
               -#  %ul.submenu
               -#    %li
-              -#      = link_to 'Our Sponsors!', 'sponsors'
+              -#      = link_to 'Our Sponsors!', 'sponsors.html'
               -#    %li.divided
-              -#      = link_to 'Write - Thurs 3/19', 'write'
+              -#      = link_to 'Write - Thurs 3/19', 'write.html'
               -#    %li
-              -#      = link_to 'Speak - Fri 3/20', 'speak'
+              -#      = link_to 'Speak - Fri 3/20', 'speak.html'
               -#    %li
-              -#      = link_to 'Code - Sat 3/21', 'code'
+              -#      = link_to 'Code - Sat 3/21', 'code.html'
               -#    %li.divided
-              -#      = link_to 'Sponsor conference', '/sponsor'
+              -#      = link_to 'Sponsor conference', 'sponsor.html'
               -#    %li
-              -#      = link_to 'Scholarships', 'scholarships'
+              -#      = link_to 'Scholarships', 'scholarships.html'
               -#    %li.divided
-              -#      = link_to 'Speakers', 'speakers'
+              -#      = link_to 'Speakers', 'speakers.html'
               -#    %li
-              -#      = link_to 'Schedule', 'schedule'
+              -#      = link_to 'Schedule', 'schedule.html'
               -#    %li
-              -#      = link_to 'Program of Events', 'program'
+              -#      = link_to 'Program of Events', 'program.html'
               -#    %li.divided
-              -#      = link_to 'Testimonials', 'testimonials'
+              -#      = link_to 'Testimonials', 'testimonials.html'
               -#    %li
-              -#      = link_to 'Childcare', 'childcare'
+              -#      = link_to 'Childcare', 'childcare.html'
               -#    %li
-              -#      = link_to 'Accessibility', 'childcare'
+              -#      = link_to 'Accessibility', 'childcare.html'
 
               %li.nav-link.meetups
                 %a{ href:"http://writespeakcode.com/chapters" } Chapters
@@ -83,7 +83,7 @@
                 %a{ href:"http://writespeakcode.com/blog" } Blog
 
               %li.nav-link.sponsors
-                %a{ href:"/sponsor" } Sponsor
+                = link_to "Sponsor", "sponsor.html"
 
           -#%div.navigation-tools
           -#  %div.search-bar

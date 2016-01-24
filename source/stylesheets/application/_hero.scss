@@ -1,9 +1,9 @@
 .hero {
   $hero-color: white;
-  $hero-image: '/images/2013-conf/2013-heads-down-overlay2.jpg';
+  $hero-image: "2013-conf/2013-heads-down-overlay2.jpg";
 
 
-  @include background(url($hero-image), no-repeat $brand-accent-dark scroll);
+  @include background(url(image_path($hero-image)), no-repeat $brand-accent-dark scroll);
   background-color: $brand-accent-dark;
   background-position: top;
   background-repeat: no-repeat;
@@ -71,4 +71,3 @@
     }
   }
 }
-

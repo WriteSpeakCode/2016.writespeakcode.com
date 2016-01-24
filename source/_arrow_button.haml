@@ -1,6 +1,4 @@
 - classes ||= []
-- classes = classes.join(' ')
+- classes = classes.push("button").join(" ")
 
-%a.button{ href: "#{link}", class: "#{classes}" }
-  #{text}
-  %i.fa.fa-angle-double-right
+= link_to "#{text} <i class='fa fa-angle-double-right'></i>", link, class: classes

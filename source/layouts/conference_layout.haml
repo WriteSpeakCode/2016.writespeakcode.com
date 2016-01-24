@@ -15,8 +15,8 @@
             Chicago, IL
 
           %p
-            %a.button.notice{ href: '/sponsor' } Sponsor
-          -#  %a.button.success{ href: 'scholarships' } Scholarships
+            = link_to "Sponsor", "sponsor.html", :class => "button notice"
+          -#  = link_to "Scholarships", "scholarships.html", :class => "button success"
           -#  %a.button.primary{ href: 'https://guestlistapp.com/events/306111' }
           -#    Register NOW!
 
@@ -24,11 +24,10 @@
           -#%p
           -#  Check out our
           -#  = succeed '.' do
-          -#    = link_to "fantastic sponsors", "sponsors"
+          -#    = link_to "fantastic sponsors", "sponsors.html"
 
           %h4.childcare-callout
-            %a{ href: 'childcare' }
-              Childcare Available!
+            = link_to "Childcare Available!", "childcare.html"
 
     #content
       = yield
@@ -46,4 +45,4 @@
       -#%p
       -#  We wouldn't be here without the generous support of
       -#  = succeed '.' do
-      -#    = link_to "our sponsors", "sponsors"
+      -#    = link_to "our sponsors", "sponsors.html"

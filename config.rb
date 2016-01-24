@@ -69,6 +69,9 @@ set :images_dir, 'images'
 sprockets.append_path File.join root, 'bower_components'
 sprockets.import_asset 'jquery'
 
+activate :relative_assets
+set :relative_links, true
+
 # Build-specific configuration
 configure :build do
   # For example, change the Compass output style for deployment
@@ -79,9 +82,6 @@ configure :build do
 
   # Enable cache buster
   # activate :asset_hash
-
-  # Use relative URLs
-  # activate :relative_assets
 
   # Or use a different image path
   # set :http_prefix, "/Content/images/"
