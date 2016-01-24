@@ -31,11 +31,9 @@
 ###
 # Helpers
 require 'lib/conference_helper'
-require 'lib/blog_helper'
 
 helpers do
   include ConferenceHelper
-  include BlogHelper
 
   # sponsors
   def sponsor_levels
