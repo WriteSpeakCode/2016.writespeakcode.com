@@ -4,6 +4,7 @@ module ConferenceHelper
     items.map { |item| OpenStruct.new(item) }
   end
 
+  #speakers
   def all_speakers
     data.people.select { |k,v| v['pages'].try(:include?, 'speaker') }
   end
@@ -57,5 +58,65 @@ module ConferenceHelper
     end
 
     talks_info
+  end
+
+  # sponsors
+  def sponsor_levels
+    levels = {
+      platinum: 1,
+      gold: 2,
+      silver: 3,
+      bronze: 4,
+      childcare: 5,
+      host: 6
+    }
+  end
+
+  def level_to_num(level)
+    levels[level.to_sym] || 5
+  end
+
+  def sponsors_for(filter, level)
+    data.sponsors.select do |k,v|
+      v.sponsoring.include?(filter) && v.sponsor_level == level.to_s
+    end
+  end
+
+  def time_converter(hour, minutes)
+    result = ""
+    minutes = "00" if minutes == 0
+    if hour > 12
+      result += "#{hour-12}:#{minutes}pm"
+    elsif hour == 12
+      result += "#{hour}:#{minutes}pm"
+    else
+      result += "#{hour}:#{minutes}am"
+    end
+    result
+  end
+
+  def person_comparator(p, sorts)
+    comparator = p.name
+    comparator = p.type + comparator if sorts[:by_type]
+    comparator = (p.weight || '') + comparator if sorts[:by_weight]
+    comparator
+  end
+
+  def people_filtered_and_sorted(d, filter, sorts)
+    d.people.select { |k, v|
+      v.pages.include?(filter)
+    }.sort_by { |k, v|
+      person_comparator(v, sorts)
+    }.tap { |data| return data.reverse if sorts[:reverse] }
+  end
+
+  def conference_button_links
+    links = %w(speakers schedule scholarships childcare)
+    links.map! do |link|
+      { url: "/#{link}", text: link.titleize }
+    end
+
+    links.last[:text] = "Childcare &amp; Accessibility"
+    links
   end
 end
