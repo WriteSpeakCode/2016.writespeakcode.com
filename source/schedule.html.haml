@@ -29,7 +29,7 @@ sub_page: true
         Facilitated by #{day_facilitators_links(day).to_sentence}
 
       = partial :arrow_button,
-        locals: { link: "/conference/#{day}", text: "More", classes: %w(inverted skinny) }
+        locals: { link: "#{day}", text: "More", classes: %w(inverted skinny) }
 
     %ul.events
       - schedule_for_weekday(weekday).each do |item|

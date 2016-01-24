@@ -88,7 +88,7 @@ helpers do
   def conference_button_links
     links = %w(speakers schedule scholarships childcare)
     links.map! do |link|
-      { url: "/conference/#{link}", text: link.titleize }
+      { url: "/#{link}", text: link.titleize }
     end
 
     links.last[:text] = "Childcare &amp; Accessibility"

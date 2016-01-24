@@ -9,11 +9,11 @@ module ConferenceHelper
   end
 
   def speaker_link(slug, info)
-    link_to(info['name'], "/conference/speakers##{slug}")
+    link_to(info['name'], "/speakers##{slug}")
   end
 
   def day_facilitators_links(day)
-    data.schedule.facilitators[day].map do |f| 
+    data.schedule.facilitators[day].map do |f|
       speaker_link(f, data.people[f])
     end
   end
