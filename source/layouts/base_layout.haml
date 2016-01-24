@@ -61,29 +61,29 @@
               -#      = link_to 'Accessibility', 'childcare'
 
               %li.nav-link.meetups
-                %a{ href:"/chapters" } Chapters
+                %a{ href:"http://writespeakcode.com/chapters" } Chapters
 
               %li.nav-link.events
-                %a{ href:"/events" } Workshops
+                %a{ href:"http://writespeakcode.com/events" } Workshops
                 -#%ul.submenu
                   -#%li
-                    -#%a{ href:"/events/workshops"} Workshops
+                    -#%a{ href:"http://writespeakcode.com/events/workshops"} Workshops
                   -#%li
-                    -#%a{ href:"/events/custom" } Training &amp; Custom
+                    -#%a{ href:"http://writespeakcode.com/events/custom" } Training &amp; Custom
 
               %li.nav-link.about.more
-                %a{ href:"/about" } About
+                %a{ href:"http://writespeakcode.com/about" } About
                 %ul.submenu
                   %li
-                    %a{ href:"/about/organizers"} Organizers
+                    %a{ href:"http://writespeakcode.com/about/organizers"} Organizers
                   %li
-                    = link_to "Code of Conduct", "/about/code-of-conduct"
+                    = link_to "Code of Conduct", "http://writespeakcode.com/about/code-of-conduct"
 
               %li.nav-link.blog
-                %a{ href:"/blog" } Blog
+                %a{ href:"http://writespeakcode.com/blog" } Blog
 
-              %li.nav-link.sponsors
-                %a{ href:"/sponsor" } Sponsor
+              -#%li.nav-link.sponsors
+              -#  %a{ href:"http://writespeakcode.com/sponsor" } Sponsor
 
           %div.navigation-tools
             %div.search-bar
@@ -97,14 +97,14 @@
 
         %ul
           %li
-            = link_to "About", "/about"
+            = link_to "About", "http://writespeakcode.com/about"
           %li
-            = link_to "Organizers", "/about/organizers"
+            = link_to "Organizers", "http://writespeakcode.com/about/organizers"
 
         .footer-secondary-links
           %ul
             %li
-              = link_to "Code of Conduct", "/about/code-of-conduct"
+              = link_to "Code of Conduct", "http://writespeakcode.com/about/code-of-conduct"
             %li Logo design by McKenna Lowry and Maryanne Ko
             %li
               = "&copy; Rebecca Miller-Webster 2013-#{DateTime.now.year}".html_safe
