@@ -23,15 +23,15 @@ page_class: 'conference'
   Take your career to the next level
   %i.fa.fa-rocket
 
-.day_summaries
-  %ul.days
-    - i = 0
-    - data.days.days.each do |name, info|
-      - i = i+1
-      = partial 'day_list_item', locals: { header: "Day #{i}", icon_class: "#{name}-icon", actions: info.actions } do
-        %li.learn_more
-          = partial :arrow_button, 
-            locals: { link: "#{name}", text: "#{name.titleize} Day", classes: %w(inverted notice skinny) }
+-#.day_summaries
+-#  %ul.days
+-#    - i = 0
+-#    - data.days.days.each do |name, info|
+-#      - i = i+1
+-#      = partial 'day_list_item', locals: { header: "Day #{i}", icon_class: "#{name}-icon", actions: info.actions } do
+-#        %li.learn_more
+-#          = partial :arrow_button,
+-#            locals: { link: "#{name}", text: "#{name.titleize} Day", classes: %w(inverted notice skinny) }
 
   %h2.change-world
     %i.fa.fa-child
@@ -41,4 +41,4 @@ page_class: 'conference'
 
 = partial 'each_day'
 
-= partial :arrow_button_list, locals: { links: conference_button_links, classes: ['inverted', 'skinny'] }
+-#= partial :arrow_button_list, locals: { links: conference_button_links, classes: ['inverted', 'skinny'] }
