@@ -7,7 +7,6 @@ GEM
       minitest (~> 5.1)
       thread_safe (~> 0.1)
       tzinfo (~> 1.1)
-    addressable (2.3.8)
     bitters (1.2.0)
       bourbon (>= 4.2)
       sass (>= 3.4)
@@ -72,10 +71,6 @@ GEM
       uglifier (~> 2.5)
     middleman-alias (0.0.16)
       middleman-core (~> 3.2)
-    middleman-blog (3.5.3)
-      addressable (~> 2.3.5)
-      middleman-core (~> 3.2)
-      tzinfo (>= 0.3.0)
     middleman-core (3.3.12)
       activesupport (~> 4.1.0)
       bundler (~> 1.1)
@@ -160,7 +155,6 @@ DEPENDENCIES
   font-awesome-sass
   middleman (~> 3.3.7)
   middleman-alias
-  middleman-blog
   middleman-gh-pages
   middleman-livereload (~> 3.1.0)
   neat
