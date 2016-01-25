@@ -6,6 +6,8 @@ gem "middleman", "~>3.3.7"
 gem 'middleman-alias'
 gem 'middleman-gh-pages'
 
+gem 'rack-contrib'
+
 gem "bourbon"
 gem "neat"
 gem "bitters"
