@@ -1,5 +1,7 @@
 %div.testimonials
   - data.testimonials.each do |item|
-    %blockquote
-      %em #{item.quote}
-      %p.name - #{item.name}
+    %div.testimonial-box
+      %blockquote
+        %em #{item.quote}
+        %p.name - #{item.name}
+%div.clear-fix
