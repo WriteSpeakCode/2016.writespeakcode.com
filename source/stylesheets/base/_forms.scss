@@ -1,3 +1,4 @@
+
 fieldset {
   background: lighten($base-border-color, 10);
   border: $base-border;
@@ -75,4 +76,52 @@ select {
   margin-bottom: $base-spacing;
   max-width: 100%;
   width: auto;
+}
+
+/*Mailchimp Sign Up Form on Conference Page */
+
+.sign-up {
+  width: 320px;
+  margin: 10px auto;
+  input {
+    font-family: FontAwesome, sans-serif;
+  }
+  input.email {
+    width: 200px;
+    margin-right: 10px;
+    float: left;
+  }
+  input#mc-embedded-subscribe {
+    width: 110px;
+    background-color: #FF0000;
+    padding: 0.55em 1em;
+    &:hover {
+      text-decoration: none;
+    }
+  }
+}
+@media screen and (min-width:640px) {
+  .hero .hero-inner .hero-copy .sign-up {
+    width: 400px;
+    margin: 20px auto;
+    p {
+      margin: 0 0 1em 0;
+      font-size: 1.2em;
+      max-width: 100%;
+    }
+    input {
+      float: left;
+      margin-right: 2%;
+      width: auto;
+      &:last-of-type {
+        margin-right: 0px;
+      }
+    }
+    input.email {
+      width: 250px;
+    }
+    input#mc-embedded-subscribe {
+      width: 140px;
+    }
+  }
 }
