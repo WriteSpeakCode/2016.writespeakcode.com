@@ -16,6 +16,10 @@ each_day:
     -
       action: a concrete, next-steps action plan
       icon: check
+    -
+      action: alumni track for returning participants, focused on self-care and independent work
+      icon: graduation-cap
+
 
 days:
   write:
