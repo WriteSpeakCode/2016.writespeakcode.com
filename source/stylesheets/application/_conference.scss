@@ -29,9 +29,19 @@
     margin-top: -100px;
     text-align: center;
 
-    p {
+    .inner-content {
+      text-align: left;
       max-width: 50em;
-      margin: 0 auto 0 auto;
+      margin: 1em auto;
+    }
+
+    ul.bulleted {
+      list-style-type: disc;
+      padding-left: 2em;
+    }
+
+    p.centered {
+      text-align: center;
     }
 
     h1 {
