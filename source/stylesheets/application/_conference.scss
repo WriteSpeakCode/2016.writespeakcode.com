@@ -29,6 +29,11 @@
     margin-top: -100px;
     text-align: center;
 
+    p {
+      max-width: 50em;
+      margin: 0 auto 0 auto;
+    }
+
     h1 {
       color: $brand-accent;
       .fa { color: $light-accent; }
