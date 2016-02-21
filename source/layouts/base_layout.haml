@@ -32,9 +32,11 @@
 
           %nav{ role: "navigation" }
             %ul#js-navigation-menu.navigation-menu.show
-              %li.nav-link.conference
+              %li.nav-link.conference.more
                 = link_to "Conference", "/index.html"
-              -#  %ul.submenu
+                %ul.submenu
+                  %li
+                    = link_to 'Call for Proposals', 'cfp.html'
               -#    %li
               -#      = link_to 'Our Sponsors!', 'sponsors.html'
               -#    %li.divided
