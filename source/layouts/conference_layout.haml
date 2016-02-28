@@ -23,7 +23,9 @@
           %div.clear-fix
 
           %p
-            = link_to "Sponsor", "sponsor.html", :class => "button notice"
+            - unless current_page.data.short_name == 'tickets'
+              = link_to "Tickets", "tickets.html", :class => "button primary"
+            = link_to "Sponsor", "sponsor.html", :class => "button primary"
           -#  = link_to "Scholarships", "scholarships.html", :class => "button success"
           -#  %a.button.primary{ href: 'https://guestlistapp.com/events/306111' }
           -#    Register NOW!
