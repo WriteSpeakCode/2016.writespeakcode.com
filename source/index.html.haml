@@ -24,5 +24,9 @@ page_class: 'conference'
 
 = partial 'partials/testimonials'
 
-= partial 'partials/each_day'
+%div.conference-details
+  %div.daily-schedule
+    = partial 'partials/each_day'
+  %div.countdown
+    = partial 'partials/eventbrite_countdown2016'
 
