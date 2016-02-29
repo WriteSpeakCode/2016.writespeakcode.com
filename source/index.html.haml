@@ -22,11 +22,27 @@ page_class: 'conference'
   Take your career to the next level
   %i.fa.fa-rocket
 
-= partial 'partials/testimonials'
+-#.day_summaries
+-#  %ul.days
+-#    - i = 0
+-#    - data.days.days.each do |name, info|
+-#      - i = i+1
+-#      = partial 'day_list_item', locals: { header: "Day #{i}", icon_class: "#{name}-icon", actions: info.actions } do
+-#        %li.learn_more
+-#          = partial :arrow_button,
+-#            locals: { link: "#{name}", text: "#{name.titleize} Day", classes: %w(inverted notice skinny) }
 
-%div.conference-details
-  %div.daily-schedule
-    = partial 'partials/each_day'
-  %div.countdown
-    = partial 'partials/eventbrite_countdown2016'
+  %h2.change-world
+    %i.fa.fa-child
+    %span Day 4 &amp; beyond:
+    Change the World!
+    %i.fa.fa-child
 
+
+
+
+= partial 'testimonials'
+
+= partial 'each_day'
+
+-#= partial :arrow_button_list, locals: { links: conference_button_links, classes: ['inverted', 'skinny'] }

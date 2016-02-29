@@ -16,16 +16,14 @@
 
           %div.sign-up
             %p Subscribe to our conference mailing list to be notified when registration opens and receive conference updates.
+            
 
-
-            = partial 'partials/mailchimp'
+            = partial 'mailchimp'
 
           %div.clear-fix
 
           %p
-            - unless current_page.data.short_name == 'tickets'
-              = link_to "Tickets", "tickets.html", :class => "button primary"
-            = link_to "Sponsor", "sponsor.html", :class => "button primary"
+            = link_to "Sponsor", "sponsor.html", :class => "button notice"
           -#  = link_to "Scholarships", "scholarships.html", :class => "button success"
           -#  %a.button.primary{ href: 'https://guestlistapp.com/events/306111' }
           -#    Register NOW!
