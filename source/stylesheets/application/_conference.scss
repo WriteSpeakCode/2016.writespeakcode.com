@@ -76,14 +76,7 @@
       .fa-li {
         position: relative;
         color: $notice-color;
-        left: 0;
-      }
-
-      @media screen and (max-width: $medium-screen) {
-        .fa-li { display: none; }
-        text-align: left;
-        list-style-type: disc;
-        margin-top: .5em;
+        left: 15px;
       }
     }
   }
@@ -133,11 +126,50 @@
         margin-top: 1em;
       }
     }
+  }
 
+  .conference-details {
+    @include row;
+
+    .countdown {
+      text-align: center;
+      margin-top: 3em;
+
+      > div {
+        margin: 0 auto;
+      }
+    }
+
+    @include media($medium-screen) {
+      .daily-schedule {
+        @include span-columns(8);
+      }
+
+      .countdown {
+        @include span-columns(4);
+      }
+
+      .each_day ul {
+        margin-left: 1em;
+      }
+    }
+
+    .each_day ul {
+      text-align: left;
+
+      li {
+        padding-left: 20px;
+        text-indent: -40px;
+      }
+    }
   }
 
   .developer-definition {
+    @include row;
+
     @include square-border;
+
+    clear: both;
     margin-top: 3em;
     background-color: $alert-color;
     padding: .5em;

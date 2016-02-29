@@ -93,7 +93,7 @@ select {
   }
   input#mc-embedded-subscribe {
     width: 110px;
-    background-color: #FF0000;
+    background-color: $brand-accent;
     padding: 0.55em 1em;
     &:hover {
       text-decoration: none;
