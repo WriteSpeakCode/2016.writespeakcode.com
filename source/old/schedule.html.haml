@@ -28,7 +28,7 @@ sub_page: true
       %p
         Facilitated by #{day_facilitators_links(day).to_sentence}
 
-      = partial :arrow_button,
+      = partial 'partials/arrow_button',
         locals: { link: "#{day}", text: "More", classes: %w(inverted skinny) }
 
     %ul.events
