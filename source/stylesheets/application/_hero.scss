@@ -1,9 +1,6 @@
 .hero {
   $hero-color: white;
-  $hero-image: "2013-conf/2013-heads-down-overlay2.jpg";
 
-
-  @include background(url(image_path($hero-image)), no-repeat $brand-accent-dark scroll);
   background-color: $brand-accent-dark;
   background-position: top;
   background-repeat: no-repeat;
@@ -13,8 +10,7 @@
    @include media($large-screen) { padding-bottom: 2.7em; }
 
   .hero-logo img {
-    height: 4em;
-    margin-bottom: 1em;
+    width: 50%
   }
 
   .hero-inner {
@@ -24,11 +20,11 @@
     color: $hero-color;
 
     margin: auto;
-    padding: 1.5em 1.5em 3em 1.5em;
+    padding: 0em 1.5em;
     text-align: center;
 
     @include media($large-screen) {
-      padding: 3em;
+      padding: 0em 3em;
     }
 
     h1, h2 {

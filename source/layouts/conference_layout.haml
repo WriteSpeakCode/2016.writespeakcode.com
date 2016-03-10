@@ -2,23 +2,17 @@
   .conference_layout{ class: "#{'sub_page' if current_page.data.sub_page}" }
     %section.hero
       .hero-inner
+        .hero-logo
+          %img{ src: "/images/conf-2016-logo.svg" }
         .hero-copy
-          %h1
-            2016 International Conference for
-            %br.header-break/
-            Women Software Developers
-            %a.small{ href: '#developer-definition' }*
-
           %h2
             June 15 - 18, 2016
             %i.fa.fa-star-o
             Chicago, IL
 
           %div.sign-up
-            %p Subscribe to our mailing list to receive conference updates.
-
-
             = partial 'partials/mailchimp'
+            %p Subscribe to our mailing list to receive conference updates.
 
           %div.clear-fix
 

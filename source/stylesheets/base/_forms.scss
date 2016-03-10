@@ -85,19 +85,17 @@ select {
   margin: 10px auto;
   input {
     font-family: FontAwesome, sans-serif;
-  }
-  input.email {
-    width: 200px;
-    margin-right: 10px;
-    float: left;
+    width: 100%;
   }
   input#mc-embedded-subscribe {
-    width: 110px;
-    background-color: $brand-accent;
+    background-color: $brand-secondary;
     padding: 0.55em 1em;
     &:hover {
       text-decoration: none;
     }
+  }
+  p {
+    font-weigt: 200;
   }
 }
 @media screen and (min-width:640px) {
@@ -110,21 +108,7 @@ select {
       max-width: 100%;
     }
     input {
-      float: left;
-      margin-right: 2%;
-      width: auto;
-      &:last-of-type {
-        margin-right: 0px;
-      }
-    }
-    input.fname {
       width: 100%;
-    }
-    input.email {
-      width: 250px;
-    }
-    input#mc-embedded-subscribe {
-      width: 140px;
     }
   }
 }

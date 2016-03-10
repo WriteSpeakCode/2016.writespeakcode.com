@@ -166,6 +166,3 @@ DEPENDENCIES
   rack-contrib
   tzinfo-data
   wdm (~> 0.1.0)
-
-BUNDLED WITH
-   1.11.2

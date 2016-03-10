@@ -1,12 +1,19 @@
-#main.conference, #main.sponsors {
+#main.conference {
+  @include background(url(image_path("chicago.jpg")) no-repeat fixed, no-repeat $brand-accent-dark scroll);
+  background-size: cover
+}
+
+#main.sponsors {
   background-color: $brand-accent-dark;
 }
 
 .conference_layout {
 
-  .childcare-callout {
-    text-transform: uppercase;
-    background-color: $dark-gray;
+  width: 100%;
+  margin: 0 auto;
+
+  @include media($large-screen) {
+    width: 50%;
   }
 
   .hero {
@@ -15,7 +22,15 @@
     @include media($large-screen) { padding-bottom: $hero-bottom - 10; }
 
     .hero-inner .hero-copy h4.childcare-callout a {
-      color: $white;
+      color: $brand-secondary;
+
+      &:hover {
+        color: $brand-secondary;
+        text-decoration: underline;
+      }
+      &:visited {
+        color: $brand-secondary;
+      }
     }
   }
 
