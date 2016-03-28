@@ -49,4 +49,15 @@ module ActionView
       @lookup_context.find_template(path, prefixes, partial_prefix, locals, @details)
     end
   end
+
+  module Helpers
+    module RenderingHelper
+      alias partial render
+
+      def wrap_layout(layout, &block)
+        layout = 'layouts/' + layout.to_s
+        view_renderer.render_partial(self, {partial: layout, as_nested_layout: true}, &block)
+      end
+    end
+  end
 end

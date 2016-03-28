@@ -65,15 +65,4 @@ module ApplicationHelper
   def data
     DataFolder
   end
-
-  def wrap_layout(layout, &block)
-    layout = 'layouts/' + layout.to_s
-    view_renderer.render_partial(self, {partial: layout, as_nested_layout: true}, &block)
-  end
-
-  def included(klass)
-    klass.instance_eval do
-      alias partial render
-    end
-  end
 end
