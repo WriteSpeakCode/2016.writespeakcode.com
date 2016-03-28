@@ -1,4 +1,4 @@
-= content_for :template do
+= wrap_layout :base_layout do
   .conference_layout{ class: "#{'sub_page' if current_page.data.sub_page}" }
     %section.hero
       .hero-inner
@@ -56,4 +56,3 @@
       -#  We wouldn't be here without the generous support of
       -#  = succeed '.' do
       -#    = link_to "our sponsors", "sponsors.html"
-= render template: 'layouts/base_layout'

@@ -22,17 +22,10 @@ module ActionView
 
   class Template
     alias _orig_initialize initialize
-    alias partial render
-    alias _orig_render render
 
     def initialize(source, identifier, handler, details)
       strip_yaml_frontmatter(source)
       _orig_initialize(source, identifier, handler, details)
-    end
-
-    def render(view, locals, buffer=nil, &block)
-      view.instance_eval { alias partial render }
-      _orig_render(view, locals, buffer, &block)
     end
 
     private
@@ -46,6 +39,14 @@ module ActionView
         data = YAML.load($1)
         ApplicationHelper::PageData.parse_data(data)
       end
+    end
+  end
+
+  class PartialRenderer < AbstractRenderer
+    def find_template(path, locals)
+      partial_prefix = !@options[:as_nested_layout]
+      prefixes = path.include?(?/) ? [] : @lookup_context.prefixes
+      @lookup_context.find_template(path, prefixes, partial_prefix, locals, @details)
     end
   end
 end
