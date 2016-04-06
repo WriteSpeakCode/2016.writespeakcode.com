@@ -23,18 +23,18 @@
           %div.clear-fix
 
           %p
-            = link_to "Tickets", "tickets.html", :class => "button primary"
-            = link_to "Sponsor", "sponsor.html", :class => "button primary"
-            = link_to "Scholarships", "scholarships.html", :class => "button primary"
+            = link_to "Tickets", "/tickets.html", :class => "button primary"
+            = link_to "Sponsor", "/sponsor.html", :class => "button primary"
+            = link_to "Scholarships", "/scholarships.html", :class => "button primary"
 
 
           -#%p
           -#  Check out our
           -#  = succeed '.' do
-          -#    = link_to "fantastic sponsors", "sponsors.html"
+          -#    = link_to "fantastic sponsors", "/sponsors.html"
 
           %h4.childcare-callout
-            = link_to "Childcare Available!", "childcare.html"
+            = link_to "Childcare Available!", "/childcare.html"
 
     #content
       = yield
@@ -52,4 +52,4 @@
       -#%p
       -#  We wouldn't be here without the generous support of
       -#  = succeed '.' do
-      -#    = link_to "our sponsors", "sponsors.html"
+      -#    = link_to "our sponsors", "/sponsors.html"
