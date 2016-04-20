@@ -24,9 +24,19 @@ page_class: 'conference'
 
 = partial 'partials/testimonials'
 
-%div.conference-details
-  %div.daily-schedule
-    = partial 'partials/each_day'
-  %div.countdown
-    = partial 'partials/eventbrite_countdown2016'
+%div.inner-content
+  %div.conference-details
+    %div.daily-schedule
+      = partial 'partials/each_day'
+    %div.countdown
+      = partial 'partials/eventbrite_countdown2016'
 
+  %h2 Volunteers Wanted
+  %p
+    All volunteers will receive a free ticket and are invited to attend talks, panels,
+    workshops, and parties during the times they aren't scheduled to help. Making
+    new friends and networking with sponsors, speakers, and other attendees is also highly encouraged.
+
+  %p.centered
+    %a.button.primary{ href: 'https://docs.google.com/forms/d/1obRXfww95fe7IEYez5_6mTQ_APNWJJX2E7BU5oYGEkI/viewform', target: '_blank' }
+      Volunteer
