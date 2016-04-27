@@ -57,13 +57,7 @@
 
      a:not(.button) {
        font-weight: 200;
-        &, &:visited {
-          color: $brand-primary;
-        }
-
-        &:hover {
-          color: $brand-primary-variation;
-        }
+       @include colored-link($brand-accent-variation);
      }
     }
 
