@@ -35,7 +35,7 @@
       }
     }
 
-    border-bottom: 10px solid $brand-primary-dark;
+    border-bottom: 10px solid $brand-primary-variation;
   }
 
   #banner {
@@ -47,7 +47,7 @@
     .overlay {
       @include position(absolute, 0px 0px 0px 0px);
       display: block;
-      background-color: transparentize($brand-primary-dark, .4);
+      background-color: transparentize($brand-primary-variation, .4);
     }
 
     .copy-wrap {

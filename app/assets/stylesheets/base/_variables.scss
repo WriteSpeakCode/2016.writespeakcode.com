@@ -30,56 +30,57 @@ $base-z-index: 0;
 
 
 //Brand colors
-$red: #D84455;
-$yellow: #DEDA5C;
-$burgundy: #8B1E2B;
-$turquoise: #237BA5;
-$teal: #256A8B;
+$purple: #352063;
+$yellow: #EAAC47;
+$magenta: #862196;
+$pink: #c191c9;
+$brown: #705e41;
 
-$brand-primary: $red;
-$brand-primary-dark: $burgundy;
+$brand-primary: $purple;
+$brand-primary-variation: darken($purple, 10);
 $brand-secondary: $yellow;
-$brand-accent: $turquoise;
-$brand-accent-dark: $teal;
+$brand-accent: $magenta;
+$brand-accent-variation: $pink;
 
 // Colors
 $dark-gray: #322D2E;
 $medium-gray: lighten($dark-gray, 15);
 $light-gray: lighten($dark-gray, 40);
 
-$white: #faf9f9;
+$white: #fff;
 
-$light-primary: lighten($burgundy, 40);
+$light-primary: lighten($brand-primary, 40);
 $light-secondary: lighten($yellow, 20);
-$light-accent: lighten($teal, 40);
+$light-accent: lighten($brand-accent-variation, 20);
 
-$light-red: $light-primary;
-$light-yellow: $light-secondary;
-$light-green: $light-accent;
 
 // Background Color
 $base-background-color: $white;
+
+//Navigation
+$navigation-background: desaturate($brown, 30%);
+$navigation-color: $white;
 
 // Font Colors
 $base-font-color: $dark-gray;
 $base-accent-color: $brand-accent;
 
 // Link Colors
-$base-link-color: $brand-accent;
-$hover-link-color:  $brand-accent-dark;
+$base-link-color: $brand-primary;
+$hover-link-color:  $brand-accent;
 $base-button-color: $medium-gray;
 $hover-button-color: $dark-gray;
 
 // Flash Colors
-$alert-color: $light-yellow;
-$error-color: $light-red;
-$notice-color: lighten($base-accent-color, 20);
-$success-color: $light-green;
+$alert-color: $light-accent;
+$error-color: $brand-accent;
+$notice-color:  $light-secondary;
+$success-color: $light-primary;
 
 // Border color
 $base-border-color: $light-gray;
 $base-border: 1px solid $base-border-color;
-$section-border: 3px dashed $brand-secondary;
+$section-border: 3px dashed $brand-accent-variation;
 
 // Forms
 $form-border-color: $base-border-color;

@@ -2,13 +2,10 @@
   .conference_layout{ class: "#{'sub_page' if current_page.data.sub_page}" }
     %section.hero
       .hero-inner
-        .hero-copy
-          %h1
-            2016 International Conference for
-            %br.header-break/
-            Women Software Developers
-            %a.small{ href: '#developer-definition' }*
+        .hero-logo
+          = image_tag "conf-2016-logo.svg"
 
+        .hero-copy
           %h2
             June 15 - 18, 2016
             %i.fa.fa-star-o
@@ -23,15 +20,15 @@
           %div.clear-fix
 
           %p
-            = link_to "Tickets", "/tickets.html", :class => "button primary"
-            = link_to "Sponsor", "/sponsor.html", :class => "button primary"
-            = link_to "Scholarships", "/scholarships.html", :class => "button primary"
+            = link_to "Tickets", "/tickets.html", :class => "button alert"
+            = link_to "Sponsor", "/sponsor.html", :class => "button alert"
+            = link_to "Scholarships", "/scholarships.html", :class => "button alert"
 
 
-          -#%p
-          -#  Check out our
-          -#  = succeed '.' do
-          -#    = link_to "fantastic sponsors", "/sponsors.html"
+          %p
+            Check out our
+            = succeed '.' do
+              = link_to "fantastic sponsors", "/sponsors.html"
 
           %h4.childcare-callout
             = link_to "Childcare Available!", "/childcare.html"
@@ -43,13 +40,13 @@
       .developer-definition
         %a{ name: 'developer-definition' }
         %small
-          We define "software developer" as anyone who has written a line of code
+          We define "coders" as anyone who has written a line of code
           (HTML, CSS, JavaScript, Ruby, Python, Java, whatever) and can explain
           what it does.  Designers, E-book publishers, and beginners as well as
-          engineers with 20 years experience have enjoyed our workshops and been
+          software engineers with 20 years experience have enjoyed our workshops and been
           inspired by each other.
 
-      -#%p
-      -#  We wouldn't be here without the generous support of
-      -#  = succeed '.' do
-      -#    = link_to "our sponsors", "/sponsors.html"
+      %p
+        We wouldn't be here without the generous support of
+        = succeed '.' do
+          = link_to "our sponsors", "/sponsors.html"
