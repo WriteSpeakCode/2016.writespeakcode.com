@@ -11,7 +11,7 @@ mailchimp:
     - sponsors
 
 ny_times_developers:
-  name: NY Times Developers
+  name: New York Times Developers
   url: http://developers.nytimes.com/
   email:
   image: /assets/sponsor-logos/NYTimes_logo.png
