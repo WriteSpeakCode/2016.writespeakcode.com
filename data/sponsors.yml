@@ -1,4 +1,4 @@
-mailchimp: 
+mailchimp:
   name: Mailchimp
   url: http://mailchimp.com/
   email:
@@ -6,7 +6,7 @@ mailchimp:
   frontpage: true
   sponsoring: conference
   sponsor_level: gold
-  description:
+  description: helps you send better email.
   pages:
     - sponsors
 
@@ -20,8 +20,8 @@ ny_times_developers:
   sponsor_level: gold
   description: are a mission-driven team. Alongside partners in Design, Product and the Newsroom, we create the technical foundation and digital products for the world's finest journalism. Join us and do something different.
   pages:
-    - sponsors 
-    
+    - sponsors
+
 cdk_global:
   name: CDK Global
   url: http://cdkglobal.com/
@@ -33,7 +33,7 @@ cdk_global:
   description: is the largest global provider of integrated information technology and digital marketing solutions to the automotive retail industry
   pages:
     - sponsors
-    
+
 neurensic:
   name: Neurensic
   url: http://www.neurensic.com/
@@ -42,6 +42,6 @@ neurensic:
   frontpage: true
   sponsoring: conference
   sponsor_level: bronze
-  description: mission is to strengthen and protect our most vital industries by revealing insights from their data and empowering them to evolve into the future.
+  description: has a mission to strengthen and protect our most vital industries by revealing insights from their data and empowering them to evolve into the future.
   pages:
     - sponsors
