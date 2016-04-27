@@ -24,49 +24,31 @@
       %header.navigation{ role: "banner" }
         .navigation-wrapper
           %h1.logo><
-            %a{ href: 'http://writespeakcode.com' }><
-              = image_tag '/assets/logo/writespeakcode-inverted.png', class: 'screen'
-              = image_tag '/assets/logo/writespeakcode.png', class: 'print'
+            %a{ href: '/' }>
+              = image_tag "conf-2016-logo.svg"
           %a#js-mobile-menu.navigation-menu-button{ href: "javascript:void(0)" }
             %i.fa.fa-bars
 
           %nav{ role: "navigation" }
             %ul#js-navigation-menu.navigation-menu.show
-              %li.nav-link.conference.more
-                = link_to "Conference", "/index.html"
-                %ul.submenu
-                  %li
-                    = link_to 'Our Sponsors!', '/sponsors.html'
-                  %li
-                    = link_to 'Tickets', '/tickets.html'
-                  %li
-                    %a{ href:"https://docs.google.com/forms/d/1obRXfww95fe7IEYez5_6mTQ_APNWJJX2E7BU5oYGEkI/viewform", target: '_blank'} Volunteer
-                  %li
-                    = link_to 'Call for Proposals', '/cfp.html'
-                  %li
-                    = link_to 'Nominate', '/nominate.html'
-                  %li
-                    = link_to 'Scholarships', '/scholarships.html'
+              %li.nav-link.conference
+                = link_to "2016 Conference", "/index.html"
+              %li.nav-link.sponsors
+                = link_to 'Our Sponsors!', '/sponsors.html'
+              %li.nav-link.tickets
+                = link_to 'Tickets', '/tickets.html'
+              %li.nav-link.volunteer
+                %a{ href:"https://docs.google.com/forms/d/1obRXfww95fe7IEYez5_6mTQ_APNWJJX2E7BU5oYGEkI/viewform", target: '_blank'} Volunteer
+              %li.nav-link.scholarships
+                = link_to 'Scholarships', '/scholarships.html'
+              %li.nav-link.childcare
+                = link_to "Childcare & Accessibility", "/childcare.html"
 
-              %li.nav-link.meetups
-                %a{ href:"http://writespeakcode.com/chapters" } Chapters
-
-              %li.nav-link.events
-                %a{ href:"http://writespeakcode.com/events" } Workshops
-
-              %li.nav-link.about.more
-                %a{ href:"http://writespeakcode.com/about" } About
-                %ul.submenu
-                  %li
-                    %a{ href:"http://writespeakcode.com/about/organizers"} Organizers
-                  %li
-                    = link_to "Code of Conduct", "http://writespeakcode.com/about/code-of-conduct"
+              %li.nav-link.about
+                %a.deemphasize{ href:"http://writespeakcode.com/about" } About Write/Speak/Code
 
               %li.nav-link.blog
-                %a{ href:"http://writespeakcode.com/blog" } Blog
-
-              %li.nav-link.sponsors
-                = link_to "Sponsor", "sponsor.html"
+                %a.deemphasize{ href:"http://writespeakcode.com/blog" } Blog
 
       %section#main{ class: "#{current_page.data.page_class}" }
         = yield
@@ -84,9 +66,8 @@
           %ul
             %li
               = link_to "Code of Conduct", "http://writespeakcode.com/about/code-of-conduct"
-            %li Logo design by McKenna Lowry and Maryanne Ko
             %li
-              = "&copy; Rebecca Miller-Webster 2013-#{DateTime.now.year}".html_safe
+              = "&copy; Write/Speak/Code 2015-#{DateTime.now.year}".html_safe
 
           %ul.footer-social
             %li

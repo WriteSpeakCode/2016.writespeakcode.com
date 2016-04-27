@@ -1,5 +1,19 @@
+.static {
+  &.index {
+   .navigation[role=banner] { display: none; }
+  }
+
+  &:not(.index) {
+    .hero { display: none; }
+
+    #main.conference {
+      margin-top: 100px;
+    }
+  }
+}
+
 #main.conference, #main.sponsors {
-  background-color: $brand-accent-dark;
+  background-color: $white;
 }
 
 .conference_layout {
@@ -20,7 +34,7 @@
   }
 
   .day_summaries {
-    background-color: $light-yellow;
+    background-color: $light-secondary;
     padding-bottom: .2em;
     margin: 1em auto;
   }

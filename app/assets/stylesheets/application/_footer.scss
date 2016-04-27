@@ -13,8 +13,8 @@
     text-decoration: none;
   }
 
-  $footer-background: desaturate($dark-gray, 30%);
-  $footer-color: $white;
+  $footer-background: $navigation-background;
+  $footer-color: $navigation-color;
   $footer-link-color: transparentize($footer-color, 0.5);
   $footer-disclaimer-color: transparentize($footer-color, 0.6);
   $footer-height: 80px;

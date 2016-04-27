@@ -4,27 +4,23 @@
   padding-bottom: 1em;
   padding-top: 1em;
   .testimonial-box {
-    background-color: $brand-accent;
-    color: $white;
+    background-color: $brand-accent-variation;
+    color: $base-font-color;
     padding: 1em;
     border-radius: 3px;
     margin-bottom: 10px;
 
     blockquote {
-      border-left: none;    
+      border-left: none;
       text-align: left;
       vertical-align: top;
       background-color: transparent;
-      color: #fff;
+      color: $base-font-color;
 
     }
     &:nth-child(even) {
       background-color: $brand-secondary;
-      color: $dark-gray;
-      blockquote {
-        color: #322D2E;
-      }
-    } 
+    }
   }
   .name {
     text-align: right;

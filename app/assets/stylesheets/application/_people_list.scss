@@ -106,7 +106,7 @@ ul.people_list {
             @include display-font-light;
             @include colored-link($brand-accent);
 
-            &:hover { color: $brand-accent-dark; }
+            &:hover { color: $brand-accent-variation; }
           }
         }
       }

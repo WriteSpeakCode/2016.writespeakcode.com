@@ -11,19 +11,6 @@
 
   padding: ($icon_unit*.15) ($icon_unit*.06);
 
-  /*@media only screen and (min-width: 768px) {*/
-    /*position: absolute;*/
-
-    /*& + div, & + p, & + ul {*/
-      /*margin-left: $icon_unit + 30px;*/
-      /*min-height: $icon_unit;*/
-      /*padding-top: 10px;*/
-    /*}*/
-  /*}*/
-
-  /*@media only screen and (max-width: 768px) {*/
-    /*margin: 0 auto 20px auto;*/
-  /*}*/
 }
 
 
@@ -87,7 +74,7 @@ li.day_icon {
 }
 
 h1 {
-  .fa { color: $light-red; }
+  .fa { color: $light-primary; }
 }
 
 h1.icon {
