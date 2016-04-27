@@ -10,7 +10,7 @@
   }
 
   $odd-color: $brand-primary;
-  $even-color: $brand-primary-dark;
+  $even-color: $brand-primary-variation;
   $main-lighten: 40;
   $callout-lighten: 30;
   .event {
@@ -28,7 +28,7 @@
       background-color: lighten($brand-accent, 55);
 
       &:nth-child(even) {
-        border-left-color: $brand-accent-dark;
+        border-left-color: $brand-accent-variation;
       }
     }
 
