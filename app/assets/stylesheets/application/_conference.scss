@@ -1,19 +1,13 @@
 .static {
   &.index {
    .navigation[role=banner] { display: none; }
-  }
-
-  &:not(.index) {
-    .hero { display: none; }
-
-    #main.conference {
-      margin-top: 100px;
-    }
+   margin-top: 0px;
   }
 }
 
 #main.conference, #main.sponsors {
   background-color: $white;
+  margin-top: 100px;
 }
 
 .conference_layout {

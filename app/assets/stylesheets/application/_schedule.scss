@@ -8,33 +8,45 @@
       @include colored-link($brand-primary);
     }
   }
+}
 
-  $odd-color: $brand-primary;
-  $even-color: $brand-primary-variation;
-  $main-lighten: 40;
-  $callout-lighten: 30;
-  .event {
-    border-left: 10px solid $odd-color;
-    background-color: lighten($odd-color, $main-lighten);
+h2.day-title {
+  margin-top: $base-spacing;
+}
+
+$schedule-color: lighten($brand-accent-variation, 15);
+$secondary-color: lighten($light-secondary, 10);
+$title-color: lighten($brand-primary, 35);
+$community-color: lighten($brand-accent, 20);
+
+.tracks {
+  td { padding: $base-spacing; }
+}
+
+.days-schedule {
+  td:first-child {
+    width: 100px;
+  }
+}
+
+.days-schedule, .tracks {
+  width: 100%;
+
+  tr {
+    background-color: $schedule-color;
     padding: .5em;
     margin: 1em 0;
 
-    &:nth-child(even) {
-      border-left-color: $even-color;
+    &.tracks-title {
+      background-color: $title-color;
     }
 
-    &.talk, &.panel {
-      border-left-color: $brand-accent;
-      background-color: lighten($brand-accent, 55);
-
-      &:nth-child(even) {
-        border-left-color: $brand-accent-variation;
-      }
+    &.internal {
+      background-color: $secondary-color;
     }
 
-    h5 {
-      margin-top: 0;
-      margin-bottom: .5em;
+    &.community {
+      background-color: $community-color;
     }
   }
 

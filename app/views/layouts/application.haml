@@ -1,0 +1,24 @@
+= wrap_layout :base_layout do
+  .conference_layout{ class: "#{'sub_page' if current_page.try(:data).try(:sub_page)}" }
+    = yield(:hero)
+
+    #content
+      = yield
+
+      %div.sign-up
+        %p Subscribe to our mailing list to receive conference updates.
+        = partial 'partials/mailchimp'
+
+      .developer-definition
+        %a{ name: 'developer-definition' }
+        %small
+          We define "coders" as anyone who has written a line of code
+          (HTML, CSS, JavaScript, Ruby, Python, Java, whatever) and can explain
+          what it does.  Designers, E-book publishers, and beginners as well as
+          software engineers with 20 years experience have enjoyed our workshops and been
+          inspired by each other.
+
+      %p
+        We wouldn't be here without the generous support of
+        = succeed '.' do
+          = link_to "our sponsors", "/sponsors.html"
