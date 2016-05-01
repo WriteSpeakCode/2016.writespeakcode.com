@@ -349,7 +349,7 @@
   }
 }
 
-@each $page in conference, tickets, volunteer, scholarships, childcare, sponsors {
+@each $page in schedule, tickets, volunteer, scholarships, childcare, sponsors, sponsor {
   .#{$page} .navigation li.#{$page} {
 
     .divided a {

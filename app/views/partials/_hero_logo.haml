@@ -1,0 +1,27 @@
+%section.hero
+  .hero-inner
+    .hero-logo
+      = image_tag "conf-2016-logo.svg"
+
+    .hero-copy
+      %h2
+        June 15 - 18, 2016
+        %i.fa.fa-star-o
+        Chicago, IL
+
+      %div.clear-fix
+
+      %p
+        = link_to "Schedule", page_path("schedule"), :class => "button alert"
+        = link_to "Tickets", "/tickets.html", :class => "button alert"
+        = link_to "Scholarships", "/scholarships.html", :class => "button alert"
+        = link_to "Sponsor", "/sponsor.html", :class => "button alert"
+
+
+      %p
+        Check out our
+        = succeed '.' do
+          = link_to "fantastic sponsors", "/sponsors.html"
+
+      %h4.childcare-callout
+        = link_to "Childcare Available!", "/childcare.html"

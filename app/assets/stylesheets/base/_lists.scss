@@ -16,6 +16,18 @@ ol {
     padding-left: $base-spacing;
   }
 
+  &.inline-list {
+    text-align: center;
+    margin-bottom: $base-spacing;
+    width: 100%;
+
+    li {
+      display: inline-block;
+
+      h4, p { display: inline-block; }
+    }
+  }
+
   &.breadcrumbs {
     text-align: center;
     margin-bottom: $base-spacing;

@@ -9,7 +9,7 @@
     %meta{ name: "viewport" , content: "width=device-width, initial-scale=1.0" }/
 
     / Use title if it's in the page YAML frontmatter
-    %title= current_page.data.title || "Write/Speak/Code"
+    %title= "2016 Write/Speak/Code Conference"
 
     = stylesheet_link_tag "normalize", "application"
     = javascript_include_tag "all"
@@ -31,8 +31,8 @@
 
           %nav{ role: "navigation" }
             %ul#js-navigation-menu.navigation-menu.show
-              %li.nav-link.conference
-                = link_to "2016 Conference", "/index.html"
+              %li.nav-link.schedule
+                = link_to "Schedule", page_path("schedule")
               %li.nav-link.sponsors
                 = link_to 'Our Sponsors!', '/sponsors.html'
               %li.nav-link.tickets
@@ -43,14 +43,16 @@
                 = link_to 'Scholarships', '/scholarships.html'
               %li.nav-link.childcare
                 = link_to "Childcare & Accessibility", "/childcare.html"
+              %li.nav-link.sponsor
+                = link_to "Sponsor", "/sponsor.html"
 
               %li.nav-link.about
-                %a.deemphasize{ href:"http://writespeakcode.com/about" } About Write/Speak/Code
+                %a.deemphasize{ href:"http://writespeakcode.com/about" } About
 
               %li.nav-link.blog
                 %a.deemphasize{ href:"http://writespeakcode.com/blog" } Blog
 
-      %section#main{ class: "#{current_page.data.page_class}" }
+      %section#main.conference
         = yield
 
       %footer.footer{ role: "contentinfo" }

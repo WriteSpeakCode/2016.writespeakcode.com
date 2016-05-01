@@ -4,7 +4,7 @@ class ApplicationController < ActionController::Base
   protect_from_forgery with: :exception
 
   def page_classes
-    [controller_name, action_name].join(' ')
+    [:conference, controller_name, action_name].join(' ')
   end
   helper_method :page_classes
 end
