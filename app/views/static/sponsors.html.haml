@@ -1,11 +1,13 @@
 ---
 title: Sponsors -- Write/Speak/Code International Conference
-layout: conference_layout
-page_class: 'conference sponsors'
 sub_page: true
 ---
 - filter = 'conference'
 %h1 Thank you to our amazing sponsors!
+
+%p
+  Interested in
+  = link_to 'becoming a sponsor?', '/sponsor.html'
 
 - sponsor_levels.each do |level, order|
   - sponsors = sponsors_for(filter, level)
@@ -21,4 +23,3 @@ sub_page: true
           %p.description
             = link_to sponsor.name, sponsor.url
             = sponsor.description
-

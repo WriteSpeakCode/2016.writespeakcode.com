@@ -21,6 +21,10 @@
     &:nth-child(even) {
       background-color: $brand-secondary;
     }
+
+    &.countdown-box {
+      padding: 0;
+    }
   }
   .name {
     text-align: right;
@@ -40,6 +44,7 @@
     &:last-of-type {
       margin-right: 0px;
     }
+
     blockquote {
       display: table-cell;
     }

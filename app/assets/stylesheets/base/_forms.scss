@@ -81,18 +81,16 @@ select {
 /*Mailchimp Sign Up Form on Conference Page */
 
 .sign-up {
-  width: 320px;
-  margin: 10px auto;
+  margin: 80px auto -20px auto;
   input {
     font-family: FontAwesome, sans-serif;
+    display: inline-block;
+    width: 200px;
   }
   input.email {
-    width: 200px;
     margin-right: 10px;
-    float: left;
   }
   input#mc-embedded-subscribe {
-    width: 110px;
     background-color: $brand-accent;
     padding: 0.55em 1em;
     &:hover {
