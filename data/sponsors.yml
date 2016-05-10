@@ -1,12 +1,12 @@
 mailchimp:
-  name: Mailchimp
+  name: Mailchimp -
   url: http://mailchimp.com/
   email:
   image: /assets/sponsor-logos/Mailchimp_logo.png
   frontpage: true
   sponsoring: conference
   sponsor_level: gold
-  description: helps you send better email.
+  description: More than 10 million businesses around the world use MailChimp for marketing automation and email newsletters.
   pages:
     - sponsors
 
@@ -43,5 +43,17 @@ neurensic:
   sponsoring: conference
   sponsor_level: bronze
   description: has a mission to strengthen and protect our most vital industries by revealing insights from their data and empowering them to evolve into the future.
+  pages:
+    - sponsors
+    
+docusign:
+  name: Docusign
+  url: https://www.docusign.com/
+  email:
+  image: /assets/sponsor-logos/docusign_logo.png
+  frontpage: true
+  sponsoring: conference
+  sponsor_level: bronze
+  description: is the fastest, most reliable way to transform every signature and approval into a simple digital action. With more than 50 million users, DocuSign works with all the apps and devices you already use, so you can safely access, sign and approve documents from any mobile device, anywhere in the world. Whether you’re signing school permission slips or buying your dream house, DocuSign is so simple to learn and easy to use, you’ll never want to go back to the old way. DocuSign It and keep life moving forward.
   pages:
     - sponsors
