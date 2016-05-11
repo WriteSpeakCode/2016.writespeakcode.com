@@ -25,7 +25,8 @@ $community-color: lighten($brand-accent, 20);
 
 .days-schedule {
   td:first-child {
-    width: 100px;
+    width: 50px;
+    @include media($large-screen) { width: 100px };
   }
 }
 
@@ -60,15 +61,6 @@ $community-color: lighten($brand-accent, 20);
       h3 {
         margin-top: 0;
       }
-
-      /*h2 {*/
-        /*border-top: $section-border;*/
-        /*padding-top: 1em;*/
-        /*&:first-of-type {*/
-          /*border: none;*/
-          /*margin-top: 1em;*/
-        /*}*/
-      /*}*/
 
       header {
         margin-top: 3em;

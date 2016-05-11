@@ -1,0 +1,19 @@
+---
+- :keynote: false
+  :slug: lauren_scott
+  :name: Lauren Scott
+  :twitter: devdame
+  :website: http://www.devdame.com
+  :linkedin: http://linkedin.com/in/devdame
+  :github: 
+  :title: Software Engineer
+  :company: Braintree
+  :bio: |
+    <p>Lauren is a level 18 computer mage at Braintree, poet-grammer, community organizer, and advocate for women and other underrepresented groups in technology.  She keeps engaged by Co-Leading RailsBridge Chicago, serving as a RailsBridge Advisory Board member, teaching programming classes with Girl Develop It, and mentoring students and alumni at Dev Bootcamp.  Lauren spends her spare time killing evil gods at the D&amp;D table, teaching herself the ukulele, speaking out for intersectional feminism, crafting cosplay and miniatures, and perpetually getting songs from Buffy stuck in her head.</p>
+  :image: lauren-scott.jpg
+  :pronoun: she/her/hers
+  :talks:
+  - 'How To Be Everything: A Look At The Way We Give Advice'
+  - Writing for Developers Panel (Moderator)
+  - Speaker Mentor
+  :id: 2158940345111515680

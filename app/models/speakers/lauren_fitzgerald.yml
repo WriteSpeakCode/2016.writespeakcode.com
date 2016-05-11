@@ -1,0 +1,17 @@
+---
+- :keynote: false
+  :slug: lauren_fitzgerald
+  :name: Lauren Fitzgerald
+  :twitter:
+  :website:
+  :linkedin:
+  :github: elarenee
+  :title: Software Consultant
+  :company: ThoughtWorks
+  :bio: |
+    <p>Lauren Fitzgerald graduated from the University of Michigan with a Computer Science degree in 2015 and is in her first year of software consulting. She has also spent her time facilitating dialogues and workshops about race and other social justice issues in the context of her university’s writing center and Intergroup Relations Program (IGR). Other interests include dancing, environmental sustainability, and practicing languages.</p>
+  :image: lauren.jpg
+  :pronoun: she/her
+  :talks:
+  - Addressing Emotional Labor in Your Tech Career
+  :id: 528950316460379775

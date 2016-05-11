@@ -1,0 +1,18 @@
+---
+- :keynote: false
+  :slug: elle_meredith
+  :name: Elle Meredith
+  :twitter: aemeredith
+  :website: http://www.aemeredith.com
+  :linkedin: https://www.linkedin.com/in/ellemeredith
+  :github: elle
+  :title: Developer
+  :company: thoughtbot
+  :bio: |
+    <p>Elle has been building websites for over a decade. Since 2007, those websites have been in Ruby. She was a Ruby Australia committee member, an organiser for Ruby Conf AU 2014, and Rails Girls Sydney events. Elle is a co-organiser for GORUCO 2016 conference and Rails Camp USA East Coast. She also runs women&#39;s work jelly at the NYC office. When she is not immersed in the Ruby community, she is probably immersed in water. You can talk to her on Twitter.</p>
+  :image: elle.png
+  :pronoun: she/her
+  :talks:
+  - Conference Organizers Panel
+  - Speaker Mentor
+  :id: -4371538470222307568

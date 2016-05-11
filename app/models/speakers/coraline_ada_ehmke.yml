@@ -1,0 +1,24 @@
+---
+- :keynote: true
+  :slug: coraline_ada_ehmke
+  :name: Coraline Ada Ehmke
+  :twitter: CoralineAda
+  :website: http://where.coraline.codes/
+  :linkedin: https://www.linkedin.com/in/coralineehmke
+  :github: CoralineAda
+  :title: 
+  :company: Github
+  :bio: |
+    <p>Coraline Ada Ehmke is a speaker, writer, teacher, open source advocate and
+        technologist with 20 years of experience in developing apps for the web. As
+        a founding member of <a href='os4w.org'>Open Source 4 Women</a> and
+        <a href='contributor-covenant.org'>Contributor Covenant</a>, she works
+        diligently to promote diversity and inclusivity in open source. Her current
+        interests include refactoring, code analytics and artificial intelligence.</p>
+  :image: coraline.png
+  :pronoun: she/her
+  :talks:
+  - "Diversity in OSS: Are We As Open As Our Code?"
+  - Speaker Mentor
+  - Open Source Mentor
+  :id: 4445632529063778848

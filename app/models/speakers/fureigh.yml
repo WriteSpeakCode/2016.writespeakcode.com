@@ -1,0 +1,27 @@
+---
+- :keynote: true
+  :slug: fureigh
+  :name: Fureigh
+  :twitter: fureigh
+  :website: fureigh.com
+  :linkedin: linkedin.com/in/fureigh
+  :github: 
+  :title: Innovation Specialist
+  :company: 18F
+  :bio: |
+    <p>Fureigh is an Oakland-based software architect who believes technology
+        should be kind to humans and so should the state. After their <a href="https://www.codeforamerica.org/about-us/the-team/alumni-fellows">2014 Code for
+        America fellowship</a>
+        reducing repeat 911 calls in Long Beach, Calif., they
+        joined <a href="https://18f.gsa.gov/">18F</a>, a digital strategy team transforming the federal government
+        from the inside out. Fureigh started New York City&#39;s <a href="http://drupalladder.org/">Drupal Ladder</a>
+        skill-building meetups, has taught United Nations employees how to use
+        Git, and has spoken at conferences ranging from <a href="http://opensourcebridge.org/">Open Source Bridge</a> to
+        <a href="https://www.creatingchange.org/">Creating Change</a>.</p>
+  :image: fureigh-headshot.jpg
+  :pronoun: they/their/them
+  :talks:
+  - 'Civic Hacking: Build Your Cred While Doing Good'
+  - Speaker Mentor
+  - Open Source Mentor
+  :id: -61974274494637515

@@ -1,0 +1,28 @@
+---
+- :keynote: true
+  :slug: alex_qin
+  :name: Alex Qin
+  :twitter: alexqin
+  :website: http://alexq.in
+  :linkedin: http://linkedin.com/in/alexandraqin
+  :github: 
+  :title: Engineer
+  :company: Skillshare
+  :bio: |
+    <p>Alex Qin is a Brooklyn based engineer and educator. She spends a lot of
+        time thinking about how to make programming accessible to all. During work
+        hours, she writes code at <a href='http://skillshare.com'>Skillshare</a>. In her spare
+        time, she enjoys teaching children and adults to code with
+        <a href='http://scripted.org'>ScriptEd</a>,
+        <a href='http://womenwhocode.com' Women Who Code, and
+        <a href='http://technovationchallenge.org'>Technovation</a>, and giving
+        talks about code, community, and accessibility. She also loves food, and
+        spent part of last summer building a
+        <a href='http://northbrooklynfarms.com'>vegetable farm in Brooklyn</a>
+        where the Domino Sugar Factory used to be.</p>
+  :image: alex-qin-headshot.jpg
+  :pronoun: She/her
+  :talks:
+  - Shaving my head made me a better programmer
+  - Speaker Mentor
+  :id: -136799523396753154

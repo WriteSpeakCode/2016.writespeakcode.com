@@ -1,0 +1,18 @@
+---
+- :keynote: false
+  :slug: latoya_allen
+  :name: LaToya Allen
+  :twitter: HashtagLaToya
+  :website: bit.ly/SheNomads
+  :linkedin: https://www.linkedin.com/in/latoyaellisallen
+  :github: LNA
+  :title: Developer
+  :company: Big Cartel
+  :bio: |
+    <p>After growing up in Michigan, LaToya moved to Florida and dabbled in real estate before relocating to Chicago, Illinois and realizing she was meant to code. She&#39;s hugely active in the Ruby community in Chicago, working with Windy City Rails and ChicagoRuby Hack Night. She&#39;s code-obsessed and currently devoting some time to teach herself Rust. Outside of coding, she&#39;s busy taking kickboxing classes, running with motivation from her favorite app, Zombies, Run!, and taking drawing classes from a local art center.</p>
+  :image: latoya.jpg
+  :pronoun: she/her
+  :talks:
+  - Conference Organizers Panel
+  - Speaker Mentor
+  :id: 2150418925091535937

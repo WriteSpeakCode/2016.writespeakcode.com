@@ -31,16 +31,21 @@
 
           %nav{ role: "navigation" }
             %ul#js-navigation-menu.navigation-menu.show
-              %li.nav-link.schedule
-                = link_to "Schedule", page_path("schedule")
+
+              %li.nav-link.program.schedule.speakers.more
+                = link_to "Program", page_path("schedule")
+                %ul.submenu
+                  %li.schedule
+                    = link_to "Schedule", page_path("schedule")
+                  %li.speakers
+                    = link_to "Speakers", speakers_path
+
               %li.nav-link.sponsors
                 = link_to 'Our Sponsors!', '/sponsors.html'
               %li.nav-link.tickets
                 = link_to 'Tickets', '/tickets.html'
               %li.nav-link.volunteer
                 %a{ href:"https://docs.google.com/forms/d/1obRXfww95fe7IEYez5_6mTQ_APNWJJX2E7BU5oYGEkI/viewform", target: '_blank'} Volunteer
-              %li.nav-link.scholarships
-                = link_to 'Scholarships', '/scholarships.html'
               %li.nav-link.childcare
                 = link_to "Childcare & Accessibility", "/childcare.html"
               %li.nav-link.faq

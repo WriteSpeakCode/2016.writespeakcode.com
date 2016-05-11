@@ -1,4 +1,4 @@
-$person_img_width: 100px;
+$person_img_width: 200px;
 $company_img_width: 150px;
 $img_left_offset: 30px;
 
@@ -11,12 +11,10 @@ ul.people_list {
 
   img {
     width: $person_img_width;
-    height: $person_img_width;
   }
 
   .social {
     font-size: .8em;
-    margin-top: -10px;
 
     li { display: inline-block; }
   }
@@ -26,7 +24,7 @@ ul.people_list {
     margin: 1em;
     padding: 1em;
 
-    min-height: $person_img_width * 1.7;
+    min-height: 470px;
     height: auto;
 
     .info {
@@ -37,12 +35,12 @@ ul.people_list {
         float: left;
         text-align: left;
         margin: 0;
+        max-width: $person_img_width + 20px;
       }
 
       & + .talk {
         @include media($large-screen) {
-          margin-left: $company_img_width + $img_left_offset;
-          min-height: $person_img_width + 60px;
+          margin-left: $person_img_width + 80px;
         }
       }
 
@@ -69,7 +67,6 @@ ul.people_list {
     }
 
     .social {
-      margin-top: -10px;
       text-align: center;
       font-size: .6em;
 
@@ -82,8 +79,6 @@ ul.people_list {
     }
 
     .talk {
-      font-style: italic;
-      font-weight: bold;
       margin-bottom: .5em;
 
       .name {
@@ -92,21 +87,21 @@ ul.people_list {
       }
 
       ul {
+        font-style: italic;
         li {
-          display: inline-block;
-          font-size: $sm-h3-font-size;
-
-          &:first-child .fa { display: none; }
-          .fa {
-            color: $success-color;
-            font-size: .8em;
-          }
-
           a {
             @include display-font-light;
             @include colored-link($brand-accent);
 
             &:hover { color: $brand-accent-variation; }
+          }
+        }
+
+        &.keynote {
+          li:first-child {
+            font-weight: bold;
+            font-size: $sm-h4-font-size;
+            color: $brand-accent;
           }
         }
       }
@@ -119,28 +114,27 @@ ul.people_list {
     }
 
     &.person {
-      .info {
-        @include media($large-screen) {
+      @include media($large-screen) {
+        .info {
           margin-left: $img_left_offset;
           margin-right: $img_left_offset;
         }
       }
     }
-
-    &.talk {
-      .talk {
-        min-height: 135px;
-      }
-
-      .bio {
-        margin-left: 0;
-      }
-    }
   }
 }
 
+.bio {
+  margin-top: $img_left_offset;
+}
+
+.full_talk {
+  font-weight: bold;
+  margin: 0.25em inherit;
+}
+
 .person, .company {
-  border: $section-border;
+  border-bottom: $section-border;
 }
 
 .person {
@@ -149,7 +143,6 @@ ul.people_list {
   }
 
   img {
-    @include round-border;
     border: 4px solid $brand-accent;
   }
 }

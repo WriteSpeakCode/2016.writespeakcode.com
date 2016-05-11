@@ -1,0 +1,17 @@
+---
+- :keynote: false
+  :slug: catherine_dugan
+  :name: Catherine Dugan
+  :twitter: dugan26
+  :website: 
+  :linkedin: https://www.linkedin.com/in/catherine-dugan-a437b147
+  :github: cdugan14
+  :title: Quality Analyst
+  :company: ThoughtWorks
+  :bio: |
+    <p>Catherine joined ThoughtWorks in the summer of 2015 after graduating with a Math degree from Pomona College. She identifies as mixed race and has experience facilitating discussions and workshops using a racial justice lens. She accidentally fell into software development and is particularly interested in the social implications of data security, test driven development and the inclusive potential of agile software development.</p>
+  :image: catherine.jpg
+  :pronoun: She/her for all of us
+  :talks:
+  - Addressing Emotional Labor in Your Tech Career
+  :id: -149196951162265017

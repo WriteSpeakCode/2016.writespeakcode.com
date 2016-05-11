@@ -1,0 +1,18 @@
+---
+- :keynote: false
+  :slug: tripta_gupta
+  :name: Tripta Gupta
+  :twitter: triptagupta
+  :website: https://github.com/neurosaurus
+  :linkedin: https://www.linkedin.com/in/tripta-gupta-490b02106
+  :github: 
+  :title: iOS Developer
+  :company: Capital One
+  :bio: |
+    <p>I like to be at the intersection of technology, business, and creativity. I am an iOS developer and passionate about running half-marathons, supporting diversity in the workplace, and storytelling as a medium to create resonance with people.</p>
+  :image: tripta-gupta.jpg
+  :pronoun: She
+  :talks:
+  - 'Give Your Code the Documentation It Deserves: How Documentation Increases Code
+    Quality'
+  :id: 1686147309186048668

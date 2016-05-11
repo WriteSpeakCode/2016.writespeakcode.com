@@ -1,0 +1,18 @@
+---
+- :keynote: false
+  :slug: cora_hays-magan
+  :name: Cora Hays-Magan
+  :twitter: corainchicago
+  :website: corainchicago.github.io
+  :linkedin: corainchicago
+  :github: corainchicago
+  :title:
+  :company:
+  :bio: |
+    <p>An enthusiastic coder, I love the problem solving and logic in coding, along with pairing and the thrill of testing. My core knowledge base is in Javascript, Ruby, and Rails (with the required HTML/CSS and SASS to go with it). I&#39;m also curious about Go and DevOps.</p>
+  :image: cora.jpg
+  :pronoun: she/her/hers
+  :talks:
+  - Getting Over the Open Source Jitters
+  - Open Source Mentor
+  :id: -2935394320731710812
