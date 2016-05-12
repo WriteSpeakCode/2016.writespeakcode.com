@@ -14,10 +14,10 @@
     = stylesheet_link_tag "normalize", "application"
     = javascript_include_tag "all"
 
-    = javascript_include_tag "//use.typekit.net/olz5yha.js"
-
-    :javascript
-      try{Typekit.load();}catch(e){ alert(e); }
+    -# Remove typekit for now
+    -#= javascript_include_tag "//use.typekit.net/olz5yha.js"
+    -#:javascript
+    -#  try{Typekit.load();}catch(e){ alert(e); }
 
   %body{class: page_class}
     .container
