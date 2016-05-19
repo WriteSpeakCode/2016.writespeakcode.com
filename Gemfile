@@ -27,11 +27,6 @@ gem 'haml-rails', '~> 0.9'
 
 gem 'high_voltage', '~> 3.0.0'
 
-gem "bourbon"
-gem "neat"
-gem "bitters"
-gem 'font-awesome-rails'
-
 gem 'hashie'
 
 gem 'active_hash'
