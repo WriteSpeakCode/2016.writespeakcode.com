@@ -35,13 +35,13 @@ gem 'font-awesome-rails'
 gem 'hashie'
 
 gem 'active_hash'
+gem 'redcarpet'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug'
   gem 'pry'
   gem 'rspec-rails'
-  gem 'redcarpet'
 end
 
 group :development do
