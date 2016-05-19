@@ -1,0 +1,18 @@
+---
+- :keynote: false
+  :slug: allison_mcmillan
+  :name: Allison McMillan
+  :twitter: allie_p
+  :website: http://allisonsherenmcmillan.blogspot.com/
+  :linkedin: https://www.linkedin.com/in/apmcmillan
+  :github: 
+  :title: Engineer
+  :company: General Assembly
+  :bio: |
+    <p>Allison McMillan is a software engineer. She started programming at a Rails Girls workshop and is now a chapter organizer. Allison was previously a startup founder, a community builder at the University of Michigan, and Managing Director at the Israel on Campus Coalition. She is also a new(ish) mom. Allison lives in the Washington, DC area.</p>
+  :image: allison-mcmillian.jpg
+  :pronoun: she, her
+  :talks:
+  - 'BDD: Baby Driven Development'
+  - Speaker Mentor
+  :id: -2386764656257120567

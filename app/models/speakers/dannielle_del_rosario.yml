@@ -1,0 +1,17 @@
+---
+- :keynote: false
+  :slug: dannielle_del_rosario
+  :name: Dannielle Del Rosario
+  :twitter: dirosaur
+  :website: 
+  :linkedin: https://www.linkedin.com/in/dannielle-del-rosario-0350a85a
+  :github: dannielle
+  :title: Software Engineer
+  :company: Big Nerd Ranch
+  :bio: |
+    <p>Dannielle Del Rosario is a multi-disciplinary software developer, visual artist and founding member of Different Games Collective, an organization focused on making diverse and inclusive events in gaming communities. Dannielle graduated from the Georgia Institute of Technology and has spoken previously at Grace Hopper Celebration of Women in Computing 2014 and Southeast Women in Computing Conference 2015. She often blogs about play and games on the Internet. Her interests include travel, digital media, and pastries.</p>
+  :image: dee_thumb.jpg
+  :pronoun: she/her
+  :talks:
+  - Addressing Emotional Labor in Your Tech Career
+  :id: 2894484725895090198

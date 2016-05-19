@@ -17,9 +17,9 @@
   %li
     = link_to  'Thursday', '#day2'
   %li
-    = link_to  'Friday', '#day1'
+    = link_to  'Friday', '#day3'
   %li
-    = link_to  'Saturday', '#day1'
+    = link_to  'Saturday', '#day4'
   %li
     = link_to  'The Tracks', '#tracks'
 
@@ -48,7 +48,17 @@
   %tr
     %td 9:00 am
     %td{ colspan: 2 }
-      %h4 Welcome &amp; Opening Talks
+      %h4 Welcome
+  %tr
+    %td &nbsp;
+    %td{ colspan: 2 }
+      %h3
+        = link_to "Shaving my head made me a better programmer - Alex Quin", "#{speakers_path}#alex_qin"
+  %tr
+    %td &nbsp;
+    %td{ colspan: 2 }
+      %h4
+        = link_to "How To Be Everything: A Look At The Way We Give Advice - Lauren Scott", "#{speakers_path}#lauren_scott"
   %tr
     %td 11:00 am
     %td
@@ -60,7 +70,7 @@
     %td
       %h4 Leadership &amp; communication
       %ul
-        %li Explore communication styles
+        %li= link_to "Ask vs. Guess Culture Communication - Katherine Wu", "#{speakers_path}#katherine_wu"
         %li Find your leadership philosophy
         %li Role play newfound skills
   %tr.internal
@@ -73,20 +83,30 @@
       %h4 Write
       %ul
         %li Generate 20 topics to write or speak about
-        %li Learn from women code authors
+        %li
+          %strong Writing for Developers Panel
+          with
+          = link_to "Lauren Scott (Moderator),", "#{speakers_path}#lauren_scott"
+          = link_to "Chiu-ki Chan,", "#{speakers_path}#chiu-ki_chan"
+          = link_to "Tanya Schlusser,", "#{speakers_path}#tanya_schlusser"
+          = link_to "Annyce Davis,", "#{speakers_path}#annyce_davis"
+          and
+          = link_to "Iris Amelia Febres.", "#{speakers_path}#iris_amelia_febres"
+
         %li Try a variety of outlining techniques
         %li Write a blog post and get feedback
     %td
       %h4 Self-care
       %ul
-        %li Learn to effectively create change
+        %li= link_to "Cassandra at the Keyboard - Heidi Waterhouse", "#{speakers_path}#heidi_waterhouse"
         %li Process working in a male-dominated field
         %li Explore mindfulness
         %li Create art for self-care
   %tr
     %td 5:00 pm
     %td{ colspan: 2 }
-      %h4 Closing Talk
+      %h3
+        = link_to "Say it with Video - Annyce Davis", "#{speakers_path}#annyce_davis"
   %tr
     %td 6:00 pm
     %td{ colspan: 2 }
@@ -120,23 +140,37 @@
   %tr
     %td 9:00 am
     %td{ colspan: 2 }
-      %h4 Welcome &amp; Opening Talk
+      %h4 Welcome
+  %tr
+    %td &nbsp;
+    %td{ colspan: 2 }
+      %h3
+        = link_to "Communication and Collaboration: Lessons from the Performing Arts - Julianna Rusakiewicz", "#{speakers_path}#julianna_rusakiewicz"
   %tr
     %td 10:00 am
     %td
       %h4 Talk Proposals
       %ul
         %li Write your own talk proposal
-        %li Women conference organizers panel
+        %li
+          %strong Conference Organizers Panel
+          with
+          = link_to "Chiu-ki Chan (Moderator),", "#{speakers_path}#chiu-ki_chan"
+          = link_to "LaToya Allen,", "#{speakers_path}#latoya_allen"
+          = link_to "Elle Meredith,", "#{speakers_path}#elle_meredith"
+          = link_to "Tiffany Mikell,", "#{speakers_path}#tiffany_mikell"
+          = link_to "Carol Willing,", "#{speakers_path}#carol_willing"
+          and
+          = link_to "Naomi Ceder.", "#{speakers_path}#naomi_ceder"
         %li Create effective slides
         %li Public speaking skills
     %td
       %h4 Visibility
       %ul
-        %li Branding
-        %li E-book creation
-        %li Algorithm design &amp; development
-        %li Entrepreneurship
+        %li= link_to "Branding is the most cringeworthy term you want to know about - Neha Batra", "#{speakers_path}#neha_batra"
+        %li= link_to "From Ink to Pixels: The Story within Ebooks - Iris Amelia Febres", "#{speakers_path}#iris_amelia_febres"
+        %li= link_to "Challenging & Democratizing Algorithm Development - Liz Rush", "#{speakers_path}#liz_rush"
+        %li= link_to "Elemental SWOT: Embrace your inner entrepreneur - Yulia Ovchinnikova", "#{speakers_path}#yulia_ovchinnikova"
   %tr.internal
     %td 1:00 pm
     %td{ colspan: 2 }
@@ -146,7 +180,10 @@
     %td
       %h4 Speak
       %ul
-        %li Learn to Q &amp; A with confidence
+        %li
+          = link_to "How to Q & A - Carina Zona", "#{speakers_path}#carina_zona"
+          %br/
+          %small Followed by optional Q &amp; A roleplaying workshop with Carina!
         %li Write your talk
         %li Give a talk and get feedback
     %td
@@ -158,7 +195,8 @@
   %tr
     %td 5:30 pm
     %td{ colspan: 2 }
-      %h4 Closing Talk
+      %h3
+        = link_to "It's not you, it's them: Reflections on being marginalized in STEM - Naomi Ceder", "#{speakers_path}#naomi_ceder"
   %tr.internal
     %td 6:30 pm
     %td{ colspan: 2 }
@@ -182,7 +220,8 @@
   %tr.internal
     %td 8:00 am
     %td
-      %h4 Intro to Git &amp; Github
+      %h4
+        = link_to "Intro to Git & Github - Carol Willing", "#{speakers_path}#carol_willing"
       %small Optional
     %td
       %h4 Quiet Project Time
@@ -190,14 +229,30 @@
   %tr
     %td 9:00 am
     %td{ colspan: 2 }
-      %h4 Welcome &amp; Opening Talk
+      %h4 Welcome
+  %tr
+    %td &nbsp;
+    %td{ colspan: 2 }
+      %h3
+        = link_to "Civic hacking: build your cred while doing good - Fureigh", "#{speakers_path}#fureigh"
   %tr
     %td 11:00 am
     %td
       %h4 Find your OSS Project
       %ul
         %li Project intros by women mentors
-        %li Learn about open source, getting started, &amp; documentation
+        %li
+          Intro to Open Source - Rebecca Miller-Webster
+          %small (Optional)
+        %li
+          = link_to "Getting Over the Open Source Jitters - Cora Hays-Magan", "#{speakers_path}#cora_hays-magan"
+          %small (Optional)
+        %li
+          = link_to "Give Your Code the Documentation It Deserves: How Documentation Increases Code Quality - Tripta Gupta", "#{speakers_path}#tripta_gupta"
+          %small (Optional)
+        %li
+          = link_to "Writing Your First Ruby Gem - Liz Abinante", "#{speakers_path}#liz_abinante"
+          %small (Optional)
     %td
       %h4 Project Work &amp; Tutoring
       %ul
@@ -218,7 +273,8 @@
   %tr
     %td 5:00 pm
     %td{ colspan: 2 }
-      %h4 Closing Talk
+      %h3
+        = link_to "Diversity in OSS: Are We As Open As Our Code? - Coraline Ada Ehmke", "#{speakers_path}#coraline_ada_ehmke"
   %tr
     %td 6:00 pm
     %td{ colspan: 2 }
@@ -230,7 +286,7 @@
   %tr.community
     %td 7:30 pm
     %td{ colspan: 2 }
-      %h4 Conference After-Pary
+      %h4 Conference After-Party
 
 
 %a{ name: 'day4' }
@@ -255,9 +311,9 @@
     %td{ colspan: 2 }
       %h4 Career
       %ul
-        %li Staying relevant without burnout
-        %li Balancing career &amp; caregiving
-        %li Networking skills
+        %li= link_to "Salary Negotiation for Women in Tech - Ashley Powell", "#{speakers_path}#ashley_powell"
+        %li= link_to "BDD: Baby Driven Development - Allison McMillan", "#{speakers_path}##allison_mcmillan"
+        %li= link_to "Networking Forever - Iris Amelia Febres", "#{speakers_path}#iris_amelia_febres"
   %tr.internal
     %td
       1:00pm
@@ -269,8 +325,13 @@
     %td{ colspan: 2 }
       %h4 Self-Care
       %ul
-        %li Physical Health
-        %li Emotional Labor
+        %li= link_to "Posture for Engineers - Marylou Lenhart", "#{speakers_path}#marylou_lenhart"
+        %li
+          = link_to "Addressing Emotional Labor in Your Tech Career - Catherine Dugan", "#{speakers_path}#catherine_dugan"
+          ,&nbsp;
+          = link_to "Dannielle Del Rosario", "#{speakers_path}#dannielle_del_rosario"
+          , and&nbsp;
+          = link_to "Lauren Fitzgerald", "#{speakers_path}#lauren_fitzgerald"
   %tr.internal
     %td 4:00 pm
     %td{ colspan: 2 }

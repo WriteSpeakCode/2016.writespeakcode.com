@@ -1,0 +1,31 @@
+---
+- :keynote: true
+  :slug: naomi_ceder
+  :name: Naomi Ceder
+  :twitter: NaomiCeder
+  :website: https://learnpython.wordpress.com/
+  :linkedin: https://www.linkedin.com/in/naomiceder
+  :github: nceder
+  :title:
+  :company:
+  :bio: |
+    <p>Naomi Ceder has been learning, teaching, using, and talking about Python
+        since 2001. She is the author of the
+        <a href='http://amzn.to/1Wrr4ab'>Quick Python Book, 2nd edition</a>, the
+        sprints organizer for <a href='https://us.pycon.org/2016/community/sprints/'>PyCon</a>,
+        and the co-founder of <a href='http://trans-code.org/'>Trans*Code</a>, a UK based
+        hack day focussing on trans issues. Having worked as an organizer in various
+        communities for almost 20 years, Naomi is a member of the board of directors
+        of the <a href='https://www.python.org/psf/'>Python Software Foundation</a>
+        for 2015/2016. She speaks about her own
+        experiences of marginalization with the hope of making the communities she
+        loves more diverse and welcoming. In her spare time she enjoys knitting and
+        deep philosophical conversations with her dogs.</p>
+  :image: naomi.jpg
+  :pronoun: she/her
+  :talks:
+  - "It's not you, it's them: Reflections on being marginalized in STEM"
+  - Conference Organizers Panel
+  - Speaker Mentor
+  - Open Source Mentor
+  :id: 3468361109358417651

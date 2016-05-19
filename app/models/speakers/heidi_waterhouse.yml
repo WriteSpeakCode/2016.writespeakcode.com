@@ -1,0 +1,18 @@
+---
+- :keynote: false
+  :slug: heidi_waterhouse
+  :name: Heidi Waterhouse
+  :twitter: wiredferret
+  :website: heidiwaterhouse.com
+  :linkedin: https://www.linkedin.com/in/heidiwaterhouse
+  :github: 
+  :title: Documentation Mercenary
+  :company: Waterhouse Consulting
+  :bio: |
+    <p>Heidi is a widely experienced technical writer with an interest in writing herself out of work. She specializes in creating entire documentation suites for new companies and products in less time than you would believe possible. She speaks on topics like search-led writing, starting new documentation products, and whistleblowing as a technical writer.</p>
+  :image: heidi.jpeg
+  :pronoun: She/her
+  :talks:
+  - Cassandra at the Keyboard
+  - Speaker Mentor
+  :id: 1996361234024523668

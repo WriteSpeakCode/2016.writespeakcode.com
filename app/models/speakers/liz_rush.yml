@@ -1,0 +1,18 @@
+---
+- :keynote: false
+  :slug: liz_rush
+  :name: Liz Rush
+  :twitter: lizmrush
+  :website: lizmrush.com
+  :linkedin: https://www.linkedin.com/in/lizrush
+  :github: 
+  :title: Developer Evangelist & Software Engineer
+  :company: Algorithmia
+  :bio: |
+    <p>Liz Rush loves talking tech &amp; teaching code--as the Developer Evangelist for Algorithmia in Seattle, she gets to share that passion professionally. Liz has worked on development teams large and small to build web apps, experimental services, and complex data platforms. She is a graduate of Ada Developers Academy&#39;s inaugural cohort and remains active as an alumna mentor. When she&#39;s not blogging or coding, she can be found volunteering or out at live music &amp; techno shows.</p>
+  :image: liz-rush.jpeg
+  :pronoun: She/her
+  :talks:
+  - Challenging & Democratizing Algorithm Development
+  - Speaker Mentor
+  :id: 944447517967905176

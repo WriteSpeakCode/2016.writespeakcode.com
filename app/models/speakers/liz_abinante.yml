@@ -1,0 +1,19 @@
+---
+- :keynote: false
+  :slug: liz_abinante
+  :name: Liz Abinante
+  :twitter: feministy
+  :website: http://feminist.party
+  :linkedin: https://linkedin.com/in/lizabinante
+  :github: 
+  :title: Senior Software Engineer
+  :company: New Relic
+  :bio: |
+    <p>Liz Abinante lives in Portland, Oregon and works as a Senior Software Engineer at New Relic. She is infectiously enthusiastic about web development, teaching, learning, and feminism. She enjoys speaking at conferences, knitting, sewing, and a hacking away on interesting problems. Her greatest dream in life is to spend her entire day surrounded by puppies while coding. She swears she&#39;s a lot more interesting than this bio makes her sound. She&#39;s often been compared to cartoon characters due to her enomorous personality and penchant for sing/dancing her way through life.</p>
+  :image: liz-abinante.jpg
+  :pronoun: she/her
+  :talks:
+  - Writing Your First Ruby Gem
+  - Speaker Mentor
+  - Open Source Mentor
+  :id: 4124571778055279431

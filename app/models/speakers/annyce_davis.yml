@@ -1,0 +1,27 @@
+---
+- :keynote: true
+  :slug: annyce_davis
+  :name: Annyce Davis
+  :twitter: brwngrldev
+  :website: http://www.adavis.info
+  :linkedin: https://www.linkedin.com/in/annycedavis
+  :github: 
+  :title: Lead Android Developer
+  :company: Off Grid Electric
+  :bio: |
+    <p>Annyce is an Android <a href="https://developers.google.com/experts/people/annyce-davis">Google Developer Expert</a>.
+        She has been in the tech industry for over a decade and has spent the
+        past 5 years developing <a href="https://play.google.com/store/apps/details?id=com.wapo.posttv">applications</a>
+        for the Android ecosystem across multiple form factors. She is also a
+        <a href="http://goo.gl/xuIOvv">international conference speaker and author</a>,
+        sharing her knowledge of Android development with others. In addition,
+        Annyce is active in the Washington, DC tech scene and assists with
+        running a <a href="http://www.meetup.com/DCAndroid/">local meetup</a> focused on
+        Android development and design.</p>
+  :image: annyce-davis-headshot.jpg
+  :pronoun: She
+  :talks:
+  - Say it with Video
+  - Writing for Developers Panel
+  - Speaker Mentor
+  :id: 3667387464195301872
