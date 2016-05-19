@@ -1,0 +1,46 @@
+%section.hero
+  .hero__logo
+    = image_tag "conf-2016-logo.svg"
+
+  .hero__title
+    %p
+      June 15th - 18th
+      %br
+      325 North Wells Street
+      %br
+      Chicago, IL
+
+  .hero__copy
+    %a.button{ href: "tickets.html" }
+      Buy Tickets
+
+    %p
+      Join us for
+      %strong
+        4
+      intense days of workshops, seminars, and talks.
+
+    %p
+      Let's build the blueprint that will take your career to the next level!
+
+
+
+    %h2
+      Childcare Available!
+
+    / Begin MailChimp Signup Form
+    %form.form-inline#mc-embedded-subscribe-form{:action => "//writespeakcode.us4.list-manage.com/subscribe/post?u=5659d87448185ddd72045cf1a&amp;id=f195dc3634", :method => "post", :name => "mc-embedded-subscribe-form", :novalidate => "", :target => "_blank", :class => "validate", :target =>"_blank"}
+      %input#mce-FNAME.required.fname{:name => 'FNAME', :type => 'text', :value => "", placeholder: "First Name"}
+      %input#mce-EMAIL.required.email{:name => "EMAIL", :type => "email", :value => "", placeholder: "Email", :class => "required email", :id =>"mce-EMAIL"}/
+      %input#mc-embedded-subscribe.button.signup{:name => "subscribe", :type => "submit", :value => "Subscribe"}/
+      %div#mce-responses
+        %div#mce-error-response{:style=>"display:none"}
+        %div#mce-success-response{:style=>"display:none"}
+      %div
+        %input{:name =>"b_5659d87448185ddd72045cf1a_f195dc3634", :value =>"", :type =>"text", :tabindex => "-1", :style=>"display:none"}/
+      %div.clear-fix
+    / End mc_embed_signup
+
+  .hero__small
+    %p
+      Subscribe to our conference mailing list to receive conference updates.

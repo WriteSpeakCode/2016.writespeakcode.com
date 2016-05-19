@@ -1,0 +1,114 @@
+@import "normalize";
+@import "box-sizing";
+
+/* latin */
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Montserrat-Regular'), url(http://fonts.gstatic.com/s/montserrat/v6/zhcz-_WihjSQC0oHJ9TCYAzyDMXhdD8sAj6OAJTFsBI.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+}
+/* latin */
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Montserrat-Bold'), url(http://fonts.gstatic.com/s/montserrat/v6/IQHow_FEYlDC4Gzy_m8fcmaVI6zN22yiurzcBKxPjFE.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+}
+
+body {
+  background-color: #352063;
+  color: #ffffff;
+  font-family: "Montserrat";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  margin: 0;
+  padding: 0 20px;
+
+  @media screen and (min-width:640px) {
+    background: image_url("chicago.jpg");
+  }
+}
+
+strong {
+  color: #eaac47;
+  font-size: 1.75em;
+  font-weight: bold;
+}
+
+.hero {
+  background-color: #352063;
+  margin: 0 auto;
+  max-width: 500px;
+  padding: 50px;
+  text-align: center;
+}
+
+.hero__logo {
+  margin: 0 20px 20px;
+}
+
+.hero__title {
+  font-size: 1.5em;
+}
+
+.hero__copy {
+  font-size: 1.25em;
+  h2 {
+    color: #eaac47;
+  }
+}
+
+.hero__small {
+  font-size: 1em;
+}
+
+input {
+  border: none;
+  color: #666666;
+  height: 48px;
+  line-height: 48px;
+  margin-bottom: 10px;
+  text-align: center;
+  padding: 10px;
+  width: 100%;
+}
+
+%button-text {
+  -webkit-font-smoothing: antialiased;
+  font-weight: bold;
+  letter-spacing: 2px;
+  text-align: center;
+  text-decoration: none !important;
+  text-transform: uppercase;
+}
+
+%button {
+  @extend %button-text;
+  cursor: pointer;
+  display: inline-block;
+  height: 48px;
+  line-height: 48px;
+  margin: 0;
+  overflow: hidden;
+  padding: 0 24px;
+  position: relative;
+  -webkit-touch-callout: none;
+  transition: all ease 0.06s;
+  vertical-align: middle;
+}
+
+.button {
+  @extend %button;
+  background-color: #eaac47;
+  color: #ffffff;
+  display: block;
+  width: 100%;
+
+  &:hover {
+    background-color: #A22929;
+  }
+}
