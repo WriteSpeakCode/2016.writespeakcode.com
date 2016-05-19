@@ -21,10 +21,10 @@ bundle install
 ### Launch the server
 
 ```bash
-bundle exec middleman
+bundle exec rails s
 ```
 
-Visit [http://localhost:4567/](http://localhost:4567/)
+Visit [http://localhost:3000/](http://localhost:3000/)
 
 ## Create a pull request
 
