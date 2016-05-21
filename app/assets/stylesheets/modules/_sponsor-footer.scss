@@ -1,0 +1,67 @@
+@import "sponsor-footer/mixins";
+@import "sponsor-footer/extends";
+
+.sponsors {
+  background-color: #f9f9f9;
+  color: #111;
+  padding: 40px;
+  text-align: center;
+}
+
+.sponsors__content {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.sponsors__title {
+  color: #352063;
+  font-size: 36px;
+  font-weight: bold;
+  line-height: 42px;
+}
+
+.sponsors__copy {
+  @include rwd-content;
+  font-size: 16px;
+  line-height: 20px;
+  margin-bottom: 32px;
+}
+
+.sponsor-image {
+  display: inline-block;
+  margin: 20px 20px;
+
+  img {
+    height: 20px;
+
+    .sponsors-list--platinum & {
+      height: 80px;
+    }
+
+    .sponsors-list--gold & {
+      height: 60px;
+    }
+
+    .sponsors-list--broze & {
+      height: 40px;
+    }
+  }
+
+  @media screen and (min-width:640px) {
+    img {
+      height: 50px;
+
+      .sponsors-list--platinum & {
+        height: 90px;
+      }
+
+      .sponsors-list--gold & {
+        height: 70px;
+      }
+
+      .sponsors-list--broze & {
+        height: 60px;
+      }
+    }
+  }
+}

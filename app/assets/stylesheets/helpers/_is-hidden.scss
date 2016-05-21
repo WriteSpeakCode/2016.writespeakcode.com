@@ -1,0 +1,8 @@
+%is-hidden {
+  display: none;
+}
+
+.is-hidden,
+.none {
+  @extend %is-hidden;
+}

@@ -1,22 +1,9 @@
-@import "normalize";
-@import "box-sizing";
+// These files need to be loaded before any other components
+@import "colors";
+@import "utils";
 
-/* latin */
-@font-face {
-  font-family: 'Montserrat';
-  font-style: normal;
-  font-weight: 400;
-  src: local('Montserrat-Regular'), url(http://fonts.gstatic.com/s/montserrat/v6/zhcz-_WihjSQC0oHJ9TCYAzyDMXhdD8sAj6OAJTFsBI.woff2) format('woff2');
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
-}
-/* latin */
-@font-face {
-  font-family: 'Montserrat';
-  font-style: normal;
-  font-weight: 700;
-  src: local('Montserrat-Bold'), url(http://fonts.gstatic.com/s/montserrat/v6/IQHow_FEYlDC4Gzy_m8fcmaVI6zN22yiurzcBKxPjFE.woff2) format('woff2');
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
-}
+// Base
+@import "resets";
 
 @mixin rwd-content {
   margin: 0 auto;
@@ -30,248 +17,22 @@
   }
 }
 
-body {
-  background-color: #fff;
-  color: #111;
-  font-family: "Montserrat";
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 400;
-  margin: 0;
-  padding: 0;
-}
+// Patterns
+@import "animations";
+@import "typography";
+@import "forms";
+@import "buttons";
 
-strong {
-  color: #eaac47;
-  font-size: 1.75em;
-  font-weight: bold;
-}
+// Load modules directory
+@import "modules";
 
-.hero {
-  background-image: image_url("chicago.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  margin: 0;
-  padding: 0;
-}
 
-.hero__content {
-  background-color: #352063;
-  color: #fff;
-  margin: 0 auto;
-  max-width: 600px;
-  padding: 50px;
-  text-align: center;
-}
 
-.hero__logo {
-  margin: 0 20px 20px;
-}
 
-.hero__title {
-  font-size: 1.5em;
-}
-
-.hero__copy {
-  font-size: 1.25em;
-  h2 {
-    color: #eaac47;
-  }
-}
-
-.hero__small {
-  font-size: 1em;
-}
-
-.hero__affordance {
-  color: #eaac47;
-  font-size: 36px;
-  margin: 30px auto;
-}
-
-input {
-  border: none;
-  color: #706f6f;
-  height: 48px;
-  line-height: 48px;
-  margin-bottom: 10px;
-  text-align: center;
-  padding: 10px;
-  width: 100%;
-}
-
-%button-text {
-  -webkit-font-smoothing: antialiased;
-  font-weight: bold;
-  letter-spacing: 2px;
-  text-align: center;
-  text-decoration: none !important;
-  text-transform: uppercase;
-}
-
-%button {
-  @extend %button-text;
-  cursor: pointer;
-  display: inline-block;
-  height: 48px;
-  line-height: 48px;
-  margin: 0;
-  overflow: hidden;
-  padding: 0 24px;
-  position: relative;
-  -webkit-touch-callout: none;
-  transition: all ease 0.06s;
-  vertical-align: middle;
-}
-
-.button {
-  @extend %button;
-  background-color: #eaac47;
-  color: #ffffff;
-  display: block;
-  width: 100%;
-
-  &:hover {
-    background-color: #A22929;
-  }
-}
 
 .content {
   @include rwd-content;
   background-color: #fff;
   color: #111;
   padding: 20px;
-}
-
-h1 {
-  color: #eaac47;
-}
-
-.sponsors {
-  background-color: #f9f9f9;
-  color: #111;
-  padding: 40px;
-  text-align: center;
-}
-
-.sponsors__content {
-  max-width: 1200px;
-  margin: 0 auto;
-}
-
-.sponsors__title {
-  color: #352063;
-  font-size: 36px;
-  font-weight: bold;
-  line-height: 42px;
-}
-
-.sponsors__copy {
-  @include rwd-content;
-  font-size: 16px;
-  line-height: 20px;
-  margin-bottom: 32px;
-}
-
-.sponsor-image {
-  display: inline-block;
-  margin: 20px 20px;
-
-  img {
-    height: 20px;
-
-    .sponsors-list--platinum & {
-      height: 80px;
-    }
-
-    .sponsors-list--gold & {
-      height: 60px;
-    }
-
-    .sponsors-list--broze & {
-      height: 40px;
-    }
-  }
-
-  @media screen and (min-width:640px) {
-    img {
-      height: 50px;
-
-      .sponsors-list--platinum & {
-        height: 90px;
-      }
-
-      .sponsors-list--gold & {
-        height: 70px;
-      }
-
-      .sponsors-list--broze & {
-        height: 60px;
-      }
-    }
-  }
-}
-
-
-footer {
-  margin: 0;
-}
-
-.coder-definition {
-  background-color: #eaac47;
-}
-
-.coder-definition__copy {
-  @include rwd-content;
-  color: #111;
-  font-size: 12px;
-  font-style: italic;
-  font-weight: normal;
-  padding: 20px;
-}
-
-.footer {
-  background-color: #352063;
-  color: #fff;
-  margin: 0 0 -20px 0;
-}
-
-.footer__list {
-  @include rwd-content;
-  display: flex;
-  flex-direction: column;
-  padding: 20px;
-  text-align: center;
-
-  @media screen and (min-width:640px) {
-    flex-direction: row;
-  }
-
-  a {
-    color: #eaac47;
-    text-decoration: none;
-
-    &:active,
-    &:focus,
-    &:hover {
-      color: #fff;
-    }
-  }
-
-  ul,
-  li {
-    margin: 0;
-    padding: 0;
-    width: 100%;
-  }
-
-  .footer__item {
-    display: inline-block;
-    vertical-align: middle;
-  }
-
-  .footer__link {
-    height: 48px;
-    line-height: 48px;
-  }
 }

@@ -1,0 +1,14 @@
+@import "buttons/extends";
+@import "buttons/mixins";
+
+.button {
+  @extend %button;
+  background-color: #eaac47;
+  color: #ffffff;
+  display: block;
+  width: 100%;
+
+  &:hover {
+    background-color: #A22929;
+  }
+}
