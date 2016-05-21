@@ -18,19 +18,27 @@
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
 }
 
+@mixin rwd-content {
+  margin: 0 auto;
+
+  @media screen and (min-width:800px) {
+    max-width: 750px;
+  }
+
+  @media screen and (min-width:1240px) {
+    max-width: 900px;
+  }
+}
+
 body {
-  background-color: #352063;
-  color: #ffffff;
+  background-color: #fff;
+  color: #111;
   font-family: "Montserrat";
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
   margin: 0;
-  padding: 0 20px;
-
-  @media screen and (min-width:640px) {
-    background: image_url("chicago.jpg");
-  }
+  padding: 0;
 }
 
 strong {
@@ -40,9 +48,18 @@ strong {
 }
 
 .hero {
+  background-image: image_url("chicago.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 0;
+  padding: 0;
+}
+
+.hero__content {
   background-color: #352063;
+  color: #fff;
   margin: 0 auto;
-  max-width: 500px;
+  max-width: 600px;
   padding: 50px;
   text-align: center;
 }
@@ -66,9 +83,15 @@ strong {
   font-size: 1em;
 }
 
+.hero__affordance {
+  color: #eaac47;
+  font-size: 36px;
+  margin: 30px auto;
+}
+
 input {
   border: none;
-  color: #666666;
+  color: #706f6f;
   height: 48px;
   line-height: 48px;
   margin-bottom: 10px;
@@ -110,5 +133,113 @@ input {
 
   &:hover {
     background-color: #A22929;
+  }
+}
+
+.content {
+  @include rwd-content;
+  background-color: #fff;
+  color: #111;
+  padding: 20px;
+}
+
+h1 {
+  color: #eaac47;
+}
+
+.sponsors {
+  background-color: #352063;
+  color: #fff;
+  padding: 40px;
+  text-align: center;
+}
+
+.sponsors__content {
+}
+
+.sponsors__title {
+  color: #eaac47;
+  font-size: 36px;
+  font-weight: bold;
+}
+
+.sponsors__copy {
+  @include rwd-content;
+  font-size: 16px;
+}
+
+.sponsor-image {
+  display: inline-block;
+  margin: 10px 20px;
+  img {
+    height: 60px;
+
+    .sponsors-list--platinum & {
+      height: 140px;
+    }
+
+    .sponsors-list--gold & {
+      height: 100px;
+    }
+
+    .sponsors-list--broze & {
+      height: 80px;
+    }
+  }
+}
+
+
+footer {
+  margin: 0;
+}
+
+.coder-definition {
+  background-color: #eaac47;
+}
+
+.coder-definition__copy {
+  @include rwd-content;
+  color: #111;
+  font-size: 12px;
+  font-style: italic;
+  font-weight: normal;
+  padding: 20px;
+}
+
+.footer {
+  background-color: #706f6f;
+  color: #333;
+  display: flex;
+  flex-direction: column;
+  margin: 0 0 -20px 0;
+  padding: 20px;
+  text-align: center;
+
+  a {
+    color: #333;
+    text-decoration: none;
+
+    &:active,
+    &:focus,
+    &:hover {
+      color: #eaac47;
+    }
+  }
+
+  ul,
+  li {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+  }
+
+  .footer__item {
+    display: inline-block;
+  }
+
+  .footer__link {
+    height: 48px;
+    line-height: 48px;
+    vertical-align: middle;
   }
 }

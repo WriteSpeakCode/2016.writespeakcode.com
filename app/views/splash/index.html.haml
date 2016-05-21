@@ -1,46 +1,139 @@
 %section.hero
-  .hero__logo
-    = image_tag "conf-2016-logo.svg"
+  .hero__content
+    .hero__logo
+      %a{ href: "/" }
+        = image_tag "conf-2016-logo.svg"
 
-  .hero__title
+    .hero__title
+      %p
+        June 15th - 18th
+        %br
+        325 North Wells Street
+        %br
+        Chicago, IL
+
+    .hero__copy
+      %a.button{ href: "tickets.html" }
+        Buy Tickets
+
+      %p
+        Join us for
+        %strong
+          4
+        intense days of workshops, seminars, and talks.
+
+      %p
+        Let's build the blueprint that will take your career to the next level!
+
+
+
+      %h2
+        Childcare Available!
+
+      / Begin MailChimp Signup Form
+      %form.form-inline#mc-embedded-subscribe-form{:action => "//writespeakcode.us4.list-manage.com/subscribe/post?u=5659d87448185ddd72045cf1a&amp;id=f195dc3634", :method => "post", :name => "mc-embedded-subscribe-form", :novalidate => "", :target => "_blank", :class => "validate", :target =>"_blank"}
+        %input#mce-FNAME.required.fname{:name => 'FNAME', :type => 'text', :value => "", placeholder: "First Name"}
+        %input#mce-EMAIL.required.email{:name => "EMAIL", :type => "email", :value => "", placeholder: "Email", :class => "required email", :id =>"mce-EMAIL"}/
+        %input#mc-embedded-subscribe.button.signup{:name => "subscribe", :type => "submit", :value => "Subscribe"}/
+        %div#mce-responses
+          %div#mce-error-response{:style=>"display:none"}
+          %div#mce-success-response{:style=>"display:none"}
+        %div
+          %input{:name =>"b_5659d87448185ddd72045cf1a_f195dc3634", :value =>"", :type =>"text", :tabindex => "-1", :style=>"display:none"}/
+        %div.clear-fix
+      / End mc_embed_signup
+
+    .hero__small
+      %p
+        Subscribe to our conference mailing list to receive conference updates.
+
+    .hero__affordance
+      *go down
+
+%section.content
+  %article
+    %h1
+      Empowering women developers to become thought leaders, conference speakers, and open source contributors.
+
     %p
-      June 15th - 18th
+      Write/Speak/Code, an international organization dedicated to providing
+      skill-building and inspiration for women technologists, will bring its
+      annual conference to Chicago, June 15-18. Tickets, including student and
+      low-income options, are available.
+
+    %p
+      This event is open to all who identify as women. Childcare and Ramadan
+      accommodations will be provided.
+
+    %p
+      By the end of this intensive 4-day conference, each attendee will
+      possess and polish the skills to fully own their expertise as thought
+      leaders, conference speakers, and open source contributors.
+
+    %p
+      This year's keynote speakers include: Trans*Code's Naomi Ceder, Annyce
+      Davis (Google Developer Expert), Julianna Rusakiewicz, Alex Qin, Fureigh
+      (Code for America Fellow), and Open Source for Women's Coraline Ada
+      Ehmke.
+
+    %p
+      The curriculum covers topics from giving and receiving feedback
+      to self-care and connects each attendee to mentors in the areas of
+      writing, speaking, and several languages of code.
+
+%section.sponsors
+  .sponsors__content
+    .sponsors__title
+      Sponsors
+    %p.sponsors__copy
+      We wouldn't be here without the generous support of our sponsors.
       %br
-      325 North Wells Street
-      %br
-      Chicago, IL
+      Find out more about funding our diversity efforts.
+    .sponsors-list.sponsors-list--platinum
+      .sponsor-image
+        Google
+      .sponsor-image
+        Women Techmakers
+    .sponsors-list.sponsors-list--gold
+      .sponsor-image
+        = image_tag("sponsor-logos/NYTimes_logo.png")
+      .sponsor-image
+        = image_tag("sponsor-logos/Mailchimp_logo.png")
+    .sponsors-list.sponsors-list--silver
+      .sponsor-image
+        = image_tag("sponsor-logos/Mailchimp_logo.png")
+    .sponsors-list.sponsors-list--bronze
+      .sponsor-image
+        = image_tag("sponsor-logos/CDKGlobal_logo.png")
+      .sponsor-image
+        = image_tag("sponsor-logos/Neurensic_logo.png")
+      .sponsor-image
+        = image_tag("sponsor-logos/docusign_logo.png")
+    .sponsors-list
 
-  .hero__copy
-    %a.button{ href: "tickets.html" }
-      Buy Tickets
 
-    %p
-      Join us for
-      %strong
-        4
-      intense days of workshops, seminars, and talks.
+%section><
+  .coder-definition
+    %p.coder-definition__copy
+      We define "coders" as anyone who has written a line of code (HTML,
+      CSS, JavaScript, Ruby, Python, Java, whatever) and can explain what it
+      does. Designers, E-book publishers, and beginners as well as software
+      engineers with 20 years experience have enjoyed our workshops and been
+      inspired by each other.
 
-    %p
-      Let's build the blueprint that will take your career to the next level!
+  .footer
+    %ul
+      %li.footer__item
+        %a.footer__link{ href: "" }
+          About
+      %li.footer__item
+        %a.footer__link{ href: "" }
+          Organizers
 
-
-
-    %h2
-      Childcare Available!
-
-    / Begin MailChimp Signup Form
-    %form.form-inline#mc-embedded-subscribe-form{:action => "//writespeakcode.us4.list-manage.com/subscribe/post?u=5659d87448185ddd72045cf1a&amp;id=f195dc3634", :method => "post", :name => "mc-embedded-subscribe-form", :novalidate => "", :target => "_blank", :class => "validate", :target =>"_blank"}
-      %input#mce-FNAME.required.fname{:name => 'FNAME', :type => 'text', :value => "", placeholder: "First Name"}
-      %input#mce-EMAIL.required.email{:name => "EMAIL", :type => "email", :value => "", placeholder: "Email", :class => "required email", :id =>"mce-EMAIL"}/
-      %input#mc-embedded-subscribe.button.signup{:name => "subscribe", :type => "submit", :value => "Subscribe"}/
-      %div#mce-responses
-        %div#mce-error-response{:style=>"display:none"}
-        %div#mce-success-response{:style=>"display:none"}
-      %div
-        %input{:name =>"b_5659d87448185ddd72045cf1a_f195dc3634", :value =>"", :type =>"text", :tabindex => "-1", :style=>"display:none"}/
-      %div.clear-fix
-    / End mc_embed_signup
-
-  .hero__small
-    %p
-      Subscribe to our conference mailing list to receive conference updates.
+    %ul
+      %li.footer__item
+        %a.footer__link{ href: "" }
+          Code of Conduct
+      %li.footer__item
+        %a.footer__link{ href: "" }
+          &copy; Write/Speak/Code 2016
