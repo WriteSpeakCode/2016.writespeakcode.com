@@ -1,29 +1,65 @@
-%ul.people_list
-  - @speakers.each do |speaker|
-    %li.person
-      %a{ id: speaker.slug }
+%section.content
+  %article
+    %h1
+      Write/Speak/Code 2016 Speakers
 
-      .info
-        - if speaker.image
-          = image_tag "speaker-headshots/#{speaker.image}", alt: speaker.name
-        - if speaker.title || speaker.company
-          %br/
-          %span= speaker.display_title
+    %h2
+      Keynotes
 
-        %ul.social
-          - speaker.social_info.each do |type, url|
-            %li
-              %a{ href: url, target: '_blank' }
-                %span.fa{ class: "fa-#{type}" }
+    .speakers.speakers--keynote
+      .speaker
+        .talk-info
+          %h3
+            Shaving my head made me a better programmer
+          %p
+            About the talks
+        .speaker-bio
+          %h4
+            About Alex Quin
+          %p
+            Alex Qin is a Brooklyn based engineer and educator. She spends a lot of time thinking about how to make programming accessible to all. During work hours, she writes code at Skillshare. In her spare time, she enjoys teaching children and adults to code with ScriptEd, Technovation, and giving talks about code, community, and accessibility. She also loves food, and spent part of last summer building a vegetable farm in Brooklyn where the Domino Sugar Factory used to be.
+        .speaker-headshot
+          .img
+        .speaker-title
+          Engineer, Skillshare
+        .speaker-links
 
-      .talk
-        %span.name= speaker.name
-        - talks_class = speaker.keynote ? 'keynote' : ''
-        %ul{ class: talks_class }
-          - [speaker.talks].flatten.each do |talk|
-            %li{ class: talk_class(talk) }
-              = talk
 
-        - if speaker.bio
-          .bio
-            = speaker.bio.html_safe
+    %h2
+      Speakers
+
+    %h2
+      Panelists
+
+    %h2
+      Mentors
+
+    %ul
+    - @speakers.each do |speaker|
+      %li
+        %a{ id: speaker.slug }
+
+        %div
+          - if speaker.image
+            = image_tag "speaker-headshots/#{speaker.image}", alt: speaker.name
+          - if speaker.title || speaker.company
+            %br/
+            %span= speaker.display_title
+
+          %ul
+            - speaker.social_info.each do |type, url|
+              %li
+                %a{ href: url, target: '_blank' }
+                  %span.fa{ class: "fa-#{type}" }
+
+        %div
+          %span.name= speaker.name
+          - talks_class = speaker.keynote ? 'keynote' : ''
+          %ul{ class: talks_class }
+            - [speaker.talks].flatten.each do |talk|
+              %li{ class: talk_class(talk) }
+                = talk
+
+          - if speaker.bio
+            .bio
+              = speaker.bio.html_safe

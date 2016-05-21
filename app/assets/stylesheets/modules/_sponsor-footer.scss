@@ -3,9 +3,14 @@
 
 .sponsors {
   background-color: #f9f9f9;
+  display: none;
   color: #111;
   padding: 40px;
   text-align: center;
+
+  @media screen and (min-width:640px) {
+    display: block;
+  }
 }
 
 .sponsors__content {
@@ -32,36 +37,22 @@
   margin: 20px 20px;
 
   img {
-    height: 20px;
+    height: 30px;
 
     .sponsors-list--platinum & {
-      height: 80px;
+      height: 50px;
     }
 
     .sponsors-list--gold & {
       height: 60px;
     }
 
-    .sponsors-list--broze & {
-      height: 40px;
+    .sponsors-list--silver & {
+      height: 60px;
     }
-  }
 
-  @media screen and (min-width:640px) {
-    img {
+    .sponsors-list--broze & {
       height: 50px;
-
-      .sponsors-list--platinum & {
-        height: 90px;
-      }
-
-      .sponsors-list--gold & {
-        height: 70px;
-      }
-
-      .sponsors-list--broze & {
-        height: 60px;
-      }
     }
   }
 }
