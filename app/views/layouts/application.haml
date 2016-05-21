@@ -1,24 +1,118 @@
-= wrap_layout :base_layout do
-  .conference_layout{ class: "#{'sub_page' if current_page.try(:data).try(:sub_page)}" }
-    = yield(:hero)
+<!doctype html>
+%html
+  %head
+    %meta{:charset => "utf-8"}/
+    / Always force latest IE rendering engine or request Chrome Frame
+    %meta{:content => "IE=edge,chrome=1", "http-equiv" => "X-UA-Compatible"}/
+    %meta{ name: "HandheldFriendly" , content: "True" }/
+    %meta{ name: "MobileOptimized" , content: "320" }/
+    %meta{ name: "viewport" , content: "width=device-width, initial-scale=1.0" }/
 
-    #content
-      = yield
+    / Use title if it's in the page YAML frontmatter
+    %title= "2016 Write/Speak/Code Conference"
 
-      %div.sign-up
-        %p Subscribe to our mailing list to receive conference updates.
-        = partial 'partials/mailchimp'
+    = stylesheet_link_tag "splash"
+    = javascript_include_tag "all"
 
-      .developer-definition
-        %a{ name: 'developer-definition' }
-        %small
-          We define "coders" as anyone who has written a line of code
-          (HTML, CSS, JavaScript, Ruby, Python, Java, whatever) and can explain
-          what it does.  Designers, E-book publishers, and beginners as well as
-          software engineers with 20 years experience have enjoyed our workshops and been
+  %body
+    %nav.nav
+      %a.nav__logo{ href: "/" }
+        = image_tag "conf-2016-logo-long.svg"
+      %ul.nav__list
+        %li.nav__item
+          %a.nav__link{ href: "/" }
+            Schedule
+        %li.nav__item
+          %a.nav__link{ href: "/" }
+            Speakers
+        %li.nav__item
+          %a.nav__link{ href: "/" }
+            Sponsors
+        %li.nav__item
+          %a.nav__link{ href: "/" }
+            Tickets
+        %li.nav__item
+          %a.nav__link{ href: "/" }
+            Volunteer
+        %li.nav__item
+          %a.nav__link{ href: "/" }
+            Childcare &amp; A11y
+        %li.nav__item
+          %a.nav__link{ href: "/" }
+            FAQ
+        %li.nav__item
+          %a.nav__link{ href: "/" }
+            Blog
+
+    = yield
+
+    %section.sponsors
+      .sponsors__content
+        %h2.sponsors__title
+          Sponsors
+        %p.sponsors__copy
+          We wouldn't be here without the generous support of our sponsors.
+          %br
+          Find out more about funding our diversity efforts.
+
+        .sponsors-list.sponsors-list--platinum
+          %a.sponsor-image{ href: "http://teampolymathic.com/" }
+            = image_tag("sponsors/polymathic.png")
+          %a.sponsor-image{ href: "https://www.womentechmakers.com/" }
+            = image_tag("sponsors/women_techmakers.png")
+          %a.sponsor-image{ href: "https://www.google.com/" }
+            = image_tag("sponsors/google.png")
+        .sponsors-list.sponsors-list--gold
+          %a.sponsor-image{ href: "http://developer.nytimes.com/" }
+            = image_tag("sponsors/nytimes.png")
+          %a.sponsor-image{ href: "http://mailchimp.com/" }
+            = image_tag("sponsors/mailchimp.png")
+          %a.sponsor-image{ href: "https://www.kcura.com/" }
+            = image_tag("sponsors/kcura.png")
+        .sponsors-list.sponsors-list--silver
+          %a.sponsor-image{ href: "http://www.cdkglobal.com/" }
+            = image_tag("sponsors/cdk_global.png")
+          %a.sponsor-image{ href: "https://www.devmynd.com/" }
+            = image_tag("sponsors/devmynd.png")
+        .sponsors-list.sponsors-list--bronze
+          %a.sponsor-image{ href: "http://www.neurensic.com/" }
+            = image_tag("sponsors/neurensic.png")
+          %a.sponsor-image{ href: "https://www.docusign.com/" }
+            = image_tag("sponsors/docusign.png")
+          %a.sponsor-image{ href: "http://devbootcamp.com/" }
+            = image_tag("sponsors/dev_bootcamp.png")
+          %a.sponsor-image{ href: "https://github.com/" }
+            = image_tag("sponsors/github.png")
+
+    %footer><
+      .coder-definition
+        %p.coder-definition__copy
+          We define "coders" as anyone who has written a line of code (HTML,
+          CSS, JavaScript, Ruby, Python, Java, whatever) and can explain what it
+          does. Designers, E-book publishers, and beginners as well as software
+          engineers with 20 years experience have enjoyed our workshops and been
           inspired by each other.
 
-      %p
-        We wouldn't be here without the generous support of
-        = succeed '.' do
-          = link_to "our sponsors", "/sponsors.html"
+      .footer
+        %ul.footer__list
+          %li.footer__item
+            %a.footer__link{ href: "http://writespeakcode.com/about" }
+              About
+          %li.footer__item
+            %a.footer__link{ href: "http://writespeakcode.com/about/organizers" }
+              Organizers
+          %li.footer__item
+            %a.footer__link{ href: "http://writespeakcode.com/about/code-of-conduct" }
+              Code of Conduct
+          %li.footer__item
+            %a.footer__link{ href: "http://writespeakcode.com/" }
+              &copy; Write/Speak/Code 2016
+
+    :javascript
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-40295985-1', 'auto');
+      ga('send', 'pageview');
