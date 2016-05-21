@@ -2,7 +2,7 @@ mailchimp:
   name: Mailchimp -
   url: http://mailchimp.com/
   email:
-  image: /assets/sponsor-logos/Mailchimp_logo.png
+  image: /assets/sponsors/mailchimp.png
   frontpage: true
   sponsoring: conference
   sponsor_level: gold
@@ -14,7 +14,7 @@ ny_times_developers:
   name: The New York Times Developers
   url: http://developers.nytimes.com/
   email:
-  image: /assets/sponsor-logos/NYTimes_logo.png
+  image: /assets/sponsors/nytimes.png
   frontpage: true
   sponsoring: conference
   sponsor_level: gold
@@ -26,7 +26,7 @@ cdk_global:
   name: CDK Global
   url: http://cdkglobal.com/
   email:
-  image: /assets/sponsor-logos/CDKGlobal_logo.png
+  image: /assets/sponsors/cdk_global.png
   frontpage: true
   sponsoring: conference
   sponsor_level: silver
@@ -38,19 +38,19 @@ neurensic:
   name: Neurensic
   url: http://www.neurensic.com/
   email:
-  image: /assets/sponsor-logos/Neurensic_logo.png
+  image: /assets/sponsors/neurensic.png
   frontpage: true
   sponsoring: conference
   sponsor_level: bronze
   description: has a mission to strengthen and protect our most vital industries by revealing insights from their data and empowering them to evolve into the future.
   pages:
     - sponsors
-    
+
 docusign:
   name: Docusign
   url: https://www.docusign.com/
   email:
-  image: /assets/sponsor-logos/docusign_logo.png
+  image: /assets/sponsors/docusign.png
   frontpage: true
   sponsoring: conference
   sponsor_level: bronze
