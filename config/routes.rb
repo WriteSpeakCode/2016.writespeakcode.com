@@ -1,6 +1,8 @@
 Rails.application.routes.draw do
-  root to: 'static#index'
+  devise_for :admin_users, ActiveAdmin::Devise.config
+  ActiveAdmin.routes(self)
   resources :speakers, only: [:index]
 
-  get ':action', to: 'static'
+  root to: 'static#index'
+  get ':action', controller: 'static'
 end

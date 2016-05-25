@@ -2,7 +2,7 @@ source 'https://rubygems.org'
 
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '4.2.6'
+gem 'rails', '4.2.5'
 # Heroku magic
 gem 'rails_12factor', group: :production
 # Use SCSS for stylesheets
@@ -35,13 +35,35 @@ gem 'font-awesome-rails'
 gem 'hashie'
 
 gem 'active_hash'
+gem 'email_validator'
 gem 'redcarpet'
+
+# Authentication
+gem 'devise', '~> 3.5'
+gem 'activeadmin', '~> 1.0.0.pre2'
+
+# Database Gems
+gem 'pg', '~> 0.18.2'
+
+# Utilities
+gem "puma"
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
+  gem "bundler-audit", require: false
   gem 'byebug'
-  gem 'pry'
-  gem 'rspec-rails'
+  gem 'capybara'
+  gem 'dotenv-rails'
+  gem 'factory_girl_rails', '~> 4.5.0'
+  gem 'faker'
+  gem 'jasmine-rails'
+  gem 'pry-rails'
+  gem 'rspec-rails', '~> 3.0'
+end
+
+group :test do
+  gem "database_cleaner"
+  gem "shoulda-matchers", require: false
 end
 
 group :development do
