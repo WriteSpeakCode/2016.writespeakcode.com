@@ -15,9 +15,10 @@ ActiveAdmin.register_page "Dashboard" do
        end
 
        column do
-         panel "Helpful Links" do
-           para do
-             link_to("Add & edit people for Write/Speak/Code 2016", admin_people_path)
+         panel "Helpful Links for Write/Speak/Code 2016" do
+           ul do
+             li link_to("Add & edit PEOPLE (speakers, organizers, mentors, & volunteers)", admin_people_path)
+             li link_to("Add & edit TALKS and schedule", admin_talk_path)
            end
          end
        end

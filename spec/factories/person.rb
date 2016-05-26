@@ -12,7 +12,7 @@ FactoryGirl.define do
     end
 
     trait :job do
-      job_title { Faker::Company.profession.titleize }
+      job_title { Faker::Name.title }
       company { Faker::Company.name }
     end
 
