@@ -7,5 +7,6 @@ end
 puts "Seeding people"
 
 person = FactoryGirl.create(:person)
-speaker_mentor = FactoryGirl.create(:person, :phone, :mentor)
-organizer = FactoryGirl.create(:person, :phone, :organizer)
+speaker = FactoryGirl.create(:person, :phone, :profile, :mentor, :display)
+speaker_draft = FactoryGirl.create(:person, :phone, :profile, :mentor)
+organizer = FactoryGirl.create(:person, :phone, :job, :organizer)

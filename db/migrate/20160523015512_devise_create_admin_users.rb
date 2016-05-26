@@ -30,8 +30,6 @@ class DeviseCreateAdminUsers < ActiveRecord::Migration
       # t.string   :unlock_token # Only if unlock strategy is :email or :both
       # t.datetime :locked_at
 
-      t.references :person
-
       t.timestamps null: false
     end
 
@@ -39,6 +37,5 @@ class DeviseCreateAdminUsers < ActiveRecord::Migration
     add_index :admin_users, :reset_password_token, unique: true
     # add_index :admin_users, :confirmation_token,   unique: true
     # add_index :admin_users, :unlock_token,         unique: true
-    add_index :admin_users, :person_id, unique: true
   end
 end

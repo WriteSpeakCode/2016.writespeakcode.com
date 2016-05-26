@@ -19,6 +19,13 @@ RSpec.describe Person, type: :model do
         expect(subject.errors[:email]).to include("is invalid")
       end
     end
+  end
 
+  describe "#slug" do
+    it "returns the parameterized name" do
+      person = create(:person, name: "Rebecca Miller-Webster")
+
+      expect(person.slug).to eq("rebecca-miller-webster")
+    end
   end
 end

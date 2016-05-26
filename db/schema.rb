@@ -42,23 +42,31 @@ ActiveRecord::Schema.define(version: 20160523015514) do
     t.datetime "last_sign_in_at"
     t.inet     "current_sign_in_ip"
     t.inet     "last_sign_in_ip"
-    t.integer  "person_id"
     t.datetime "created_at",                          null: false
     t.datetime "updated_at",                          null: false
   end
 
   add_index "admin_users", ["email"], name: "index_admin_users_on_email", unique: true, using: :btree
-  add_index "admin_users", ["person_id"], name: "index_admin_users_on_person_id", unique: true, using: :btree
   add_index "admin_users", ["reset_password_token"], name: "index_admin_users_on_reset_password_token", unique: true, using: :btree
 
   create_table "people", force: :cascade do |t|
-    t.string   "name",                       null: false
-    t.string   "email",                      null: false
+    t.string   "name",                               null: false
+    t.string   "email",                              null: false
     t.string   "phone"
-    t.boolean  "mentor",     default: false, null: false
-    t.boolean  "organizer",  default: false, null: false
-    t.datetime "created_at",                 null: false
-    t.datetime "updated_at",                 null: false
+    t.text     "bio"
+    t.string   "pronouns",       default: "she/her", null: false
+    t.string   "image_filename"
+    t.string   "twitter"
+    t.string   "website"
+    t.string   "linkedin"
+    t.string   "github"
+    t.string   "job_title"
+    t.string   "company"
+    t.boolean  "mentor",         default: false,     null: false
+    t.boolean  "organizer",      default: false,     null: false
+    t.boolean  "display",        default: false,     null: false
+    t.datetime "created_at",                         null: false
+    t.datetime "updated_at",                         null: false
   end
 
 end

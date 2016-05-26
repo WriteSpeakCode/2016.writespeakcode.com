@@ -35,12 +35,12 @@ gem 'font-awesome-rails'
 gem 'hashie'
 
 gem 'active_hash'
-gem 'email_validator'
 gem 'redcarpet'
 
-# Authentication
-gem 'devise', '~> 3.5'
 gem 'activeadmin', '~> 1.0.0.pre2'
+gem 'devise', '~> 3.5'
+gem 'draper', '~> 1.3'
+gem 'email_validator'
 
 # Database Gems
 gem 'pg', '~> 0.18.2'
@@ -55,7 +55,7 @@ group :development, :test do
   gem 'capybara'
   gem 'dotenv-rails'
   gem 'factory_girl_rails', '~> 4.5.0'
-  gem 'faker'
+  gem 'faker', github: 'stympy/faker'
   gem 'jasmine-rails'
   gem 'pry-rails'
   gem 'rspec-rails', '~> 3.0'
