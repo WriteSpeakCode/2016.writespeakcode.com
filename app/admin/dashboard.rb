@@ -18,7 +18,7 @@ ActiveAdmin.register_page "Dashboard" do
          panel "Helpful Links for Write/Speak/Code 2016" do
            ul do
              li link_to("Add & edit PEOPLE (speakers, organizers, mentors, & volunteers)", admin_people_path)
-             li link_to("Add & edit TALKS and schedule", admin_talk_path)
+             li link_to("Add & edit TALKS and schedule", admin_talks_path)
            end
          end
        end
