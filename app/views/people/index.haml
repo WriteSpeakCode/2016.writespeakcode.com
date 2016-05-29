@@ -1,0 +1,29 @@
+%ul.people_list
+  - @people.each do |person|
+    %li.person
+      %a{ id: person.slug }
+
+      .info
+        - if person.photo_path.present?
+          = image_tag person.photo_path, alt: person.name
+        - if person.title.empty?
+          %br/
+          %span= person.title
+
+        %ul.social
+          - person.social_info.each do |type, url|
+            %li
+              %a{ href: url, target: '_blank' }
+                %span.fa{ class: "fa-#{type}" }
+
+      .talk
+        %span.name= person.name
+        -#- talks_class = person.keynote ? 'keynote' : ''
+        -#%ul{ class: talks_class }
+          -#- [person.talks].flatten.each do |talk|
+            -#%li{ class: talk_class(talk) }
+              -#= talk
+
+        - if person.bio
+          .bio
+            = person.bio.html_safe

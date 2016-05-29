@@ -4,3 +4,5 @@
 require File.expand_path('../config/application', __FILE__)
 
 Rails.application.load_tasks
+
+task "db:reset" => ["db:drop", "db:create", "db:migrate", "db:seed"]

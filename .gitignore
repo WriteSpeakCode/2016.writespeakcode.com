@@ -25,3 +25,15 @@
 /log/*
 !/log/.keep
 /tmp
+
+.DS_Store
+.byebug_history
+latest.dump
+*.env*
+!.sample.env*
+*.foreman
+!.sample.foreman
+*.swp
+*.sublime-*
+.rbenv-gemsets
+/.bundle

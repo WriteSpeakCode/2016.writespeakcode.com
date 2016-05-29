@@ -5,20 +5,42 @@ require 'pathname'
 APP_ROOT = Pathname.new File.expand_path('../../',  __FILE__)
 
 Dir.chdir APP_ROOT do
+
   # This script is a starting point to setup your application.
   # Add necessary setup steps to this file:
+
+  puts "== Checking for dependencies =="
+  unless system("command -v foreman > /dev/null;")
+    puts "Foreman is not installed."
+    puts "run `gem install foreman`"
+    puts "'See https://github.com/ddollar/foreman for install instructions."
+    exit
+  end
 
   puts "== Installing dependencies =="
   system "gem install bundler --conservative"
   system "bundle check || bundle install"
 
-  # puts "\n== Copying sample files =="
-  # unless File.exist?("config/database.yml")
-  #   system "cp config/database.yml.sample config/database.yml"
-  # end
+  puts "\n== Copying sample files =="
+  unless File.exist?("config/database.yml")
+    system "cp config/database.yml.sample config/database.yml"
+  end
+
+  unless File.exist?(".env")
+    system "cp .sample.env .env"
+  end
+
+  unless File.exist?(".env.test")
+    system "cp .sample.env.test .env.test"
+  end
+
+  puts "\n== Setup Foreman =="
+  unless File.exist?(".foreman")
+    system "cp .sample.foreman .foreman"
+  end
 
   puts "\n== Preparing database =="
-  system "bin/rake db:setup"
+  system "bin/rake db:setup db:seed"
 
   puts "\n== Removing old logs and tempfiles =="
   system "rm -f log/*"
