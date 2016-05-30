@@ -1,0 +1,13 @@
+// Covers the entire page
+@mixin coverer {
+  box-sizing: border-box;
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+.coverer {
+  @include coverer;
+}

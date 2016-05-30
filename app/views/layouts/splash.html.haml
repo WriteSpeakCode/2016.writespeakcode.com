@@ -1,0 +1,163 @@
+<!doctype html>
+%html
+  %head
+    %meta{:charset => "utf-8"}/
+    / Always force latest IE rendering engine or request Chrome Frame
+    %meta{:content => "IE=edge,chrome=1", "http-equiv" => "X-UA-Compatible"}/
+    %meta{ name: "HandheldFriendly" , content: "True" }/
+    %meta{ name: "MobileOptimized" , content: "320" }/
+    %meta{ name: "viewport" , content: "width=device-width, initial-scale=1.0" }/
+
+    / Use title if it's in the page YAML frontmatter
+    %title= "2016 Write/Speak/Code Conference"
+
+    = stylesheet_link_tag "splash"
+    = javascript_include_tag "all"
+
+  %body
+    %section.hero
+      .hero__content
+        .hero__logo
+          %a{ href: "/" }
+            = image_tag "conf-2016-logo.svg"
+
+        .hero__title
+          %p
+            June 15th - 18th
+            %br
+            325 North Wells Street
+            %br
+            Chicago, IL
+
+        .hero__copy
+          %a.button{ href: "tickets.html" }
+            Buy Tickets
+
+          %p
+            Join us for
+            %strong
+              4
+            intense days of workshops, seminars, and talks.
+
+          %p
+            Let's build the blueprint that will take your career to the next level!
+
+          %h2
+            Childcare Available!
+
+          / Begin MailChimp Signup Form
+          %form.form-inline#mc-embedded-subscribe-form{:action => "//writespeakcode.us4.list-manage.com/subscribe/post?u=5659d87448185ddd72045cf1a&amp;id=f195dc3634", :method => "post", :name => "mc-embedded-subscribe-form", :novalidate => "", :target => "_blank", :class => "validate", :target =>"_blank"}
+            %input#mce-FNAME.required.fname{:name => 'FNAME', :type => 'text', :value => "", placeholder: "First Name"}
+            %input#mce-EMAIL.required.email{:name => "EMAIL", :type => "email", :value => "", placeholder: "Email", :class => "required email", :id =>"mce-EMAIL"}/
+            %input#mc-embedded-subscribe.button.signup{:name => "subscribe", :type => "submit", :value => "Subscribe"}/
+            %div#mce-responses
+              %div#mce-error-response{:style=>"display:none"}
+              %div#mce-success-response{:style=>"display:none"}
+            %div
+              %input{:name =>"b_5659d87448185ddd72045cf1a_f195dc3634", :value =>"", :type =>"text", :tabindex => "-1", :style=>"display:none"}/
+            %div.clear-fix
+          / End mc_embed_signup
+
+        .hero__small
+          %p
+            Subscribe to our conference mailing list to receive conference updates.
+
+    %nav.nav
+      %ul.nav__list
+        %li.nav__item
+          %a.nav__link{ href: "/pages/schedule" }
+            Schedule
+        %li.nav__item
+          %a.nav__link{ href: "/speakers" }
+            Speakers
+        %li.nav__item
+          %a.nav__link{ href: "/sponsors" }
+            Sponsors
+        %li.nav__item
+          %a.nav__link{ href: "/tickets" }
+            Tickets
+        %li.nav__item
+          %a.nav__link{ href: "https://docs.google.com/forms/d/1obRXfww95fe7IEYez5_6mTQ_APNWJJX2E7BU5oYGEkI/viewform" }
+            Volunteer
+        %li.nav__item
+          %a.nav__link{ href: "/childcare" }
+            Childcare &amp; A11y
+        %li.nav__item
+          %a.nav__link{ href: "/faq" }
+            FAQ
+        %li.nav__item
+          %a.nav__link{ href: "http://blog.writespeakcode.com" }
+            Blog
+
+    = yield
+
+    %section.sponsors
+      .sponsors__content
+        %h2.sponsors__title
+          Sponsors
+        %p.sponsors__copy
+          We wouldn't be here without the generous support of our sponsors.
+          %br
+          Find out more about funding our diversity efforts.
+
+        .sponsors-list.sponsors-list--platinum
+          %a.sponsor-image{ href: "http://teampolymathic.com/" }
+            = image_tag("sponsors/polymathic.png")
+          %a.sponsor-image{ href: "https://www.womentechmakers.com/" }
+            = image_tag("sponsors/women_techmakers.png")
+          %a.sponsor-image{ href: "https://www.google.com/" }
+            = image_tag("sponsors/google.png")
+        .sponsors-list.sponsors-list--gold
+          %a.sponsor-image{ href: "http://developer.nytimes.com/" }
+            = image_tag("sponsors/nytimes.png")
+          %a.sponsor-image{ href: "http://mailchimp.com/" }
+            = image_tag("sponsors/mailchimp.png")
+          %a.sponsor-image{ href: "https://www.kcura.com/" }
+            = image_tag("sponsors/kcura.png")
+        .sponsors-list.sponsors-list--silver
+          %a.sponsor-image{ href: "http://www.cdkglobal.com/" }
+            = image_tag("sponsors/cdk_global.png")
+          %a.sponsor-image{ href: "https://www.devmynd.com/" }
+            = image_tag("sponsors/devmynd.png")
+        .sponsors-list.sponsors-list--bronze
+          %a.sponsor-image{ href: "http://www.neurensic.com/" }
+            = image_tag("sponsors/neurensic.png")
+          %a.sponsor-image{ href: "https://www.docusign.com/" }
+            = image_tag("sponsors/docusign.png")
+          %a.sponsor-image{ href: "http://devbootcamp.com/" }
+            = image_tag("sponsors/dev_bootcamp.png")
+          %a.sponsor-image{ href: "https://github.com/" }
+            = image_tag("sponsors/github.png")
+
+    %footer><
+      .coder-definition
+        %p.coder-definition__copy
+          We define "coders" as anyone who has written a line of code (HTML,
+          CSS, JavaScript, Ruby, Python, Java, whatever) and can explain what it
+          does. Designers, E-book publishers, and beginners as well as software
+          engineers with 20 years experience have enjoyed our workshops and been
+          inspired by each other.
+
+      .footer
+        %ul.footer__list
+          %li.footer__item
+            %a.footer__link{ href: "http://writespeakcode.com/about" }
+              About
+          %li.footer__item
+            %a.footer__link{ href: "http://writespeakcode.com/about/organizers" }
+              Organizers
+          %li.footer__item
+            %a.footer__link{ href: "http://writespeakcode.com/about/code-of-conduct" }
+              Code of Conduct
+          %li.footer__item
+            %a.footer__link{ href: "http://writespeakcode.com/" }
+              &copy; Write/Speak/Code 2016
+
+    :javascript
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-40295985-1', 'auto');
+      ga('send', 'pageview');

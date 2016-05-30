@@ -1,0 +1,44 @@
+@import "hero/mixins";
+@import "hero/extends";
+
+.hero {
+  background-image: image_url("chicago.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 0;
+  padding: 0;
+}
+
+.hero__content {
+  background-color: #352063;
+  color: #fff;
+  margin: 0 auto;
+  max-width: 600px;
+  padding: 50px;
+  text-align: center;
+}
+
+.hero__logo {
+  margin: 0 20px 20px;
+}
+
+.hero__title {
+  font-size: 1.5em;
+}
+
+.hero__copy {
+  font-size: 1.25em;
+  h2 {
+    color: #eaac47;
+  }
+}
+
+.hero__small {
+  font-size: 1em;
+}
+
+.hero__affordance {
+  color: #eaac47;
+  font-size: 36px;
+  margin: 30px auto;
+}

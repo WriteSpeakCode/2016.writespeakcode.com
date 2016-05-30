@@ -1,0 +1,23 @@
+@import "sponsors/mixins";
+@import "sponsors/extends";
+
+.sponsor-level {
+  margin: 0;
+  padding: 0;
+}
+
+.sponsor-info {
+  background-color: #f9f9f9;
+  color: #111;
+  display: block;
+  margin: 0;
+  padding: 40px;
+}
+
+.sponsor-logo {
+  display: inline-block;
+
+  img {
+    height: 100px;
+  }
+}

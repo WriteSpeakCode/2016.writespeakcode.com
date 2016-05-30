@@ -1,0 +1,136 @@
+@import "schedule/mixins";
+@import "schedule/extends";
+
+.sub {
+  align-items: stretch;
+  background-color: #f9f9f9;
+  color: #000;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 8px;
+
+  @media screen and (min-width:900px) {
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    margin: 0 auto;
+    width: 60%;
+  }
+
+  a {
+    border-bottom: 2px solid;
+    color: #000;
+    text-decoration: none;
+
+    &:active,
+    &:focus,
+    &:hover {
+      color: #eaac47;
+    }
+  }
+}
+
+.sub__list {
+  align-items: stretch;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  width: 100%;
+
+  @media screen and (min-width:640px) {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
+
+.sub__item {
+  display: block;
+
+  @media screen and (min-width:640px) {
+    display: inline-block;
+  }
+
+  @media screen and (min-width:900px) {
+    margin: 5px;
+  }
+}
+
+table {
+  width: 100%;
+}
+
+th {
+  background-color: #352063;
+  color: #fff;
+  font-size: 16px;
+  line-height: 40px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.schedule__time {
+  width: 100px;
+}
+
+.schedule__track {
+  width: 380px;
+}
+
+tr,
+.row {
+  background-color: #fff;
+  border-bottom: 1px solid #f9f9f9;
+  font-size: 14px;
+  vertical-align: text-top;
+}
+
+.row--alt {
+  background-color: #f9f9f9;
+}
+
+.row--all {
+  background-color: #fff4ce;
+}
+
+.row--keynote {
+  background-color: #d7dae5;
+
+  a {
+    border-bottom: 2px solid;
+    color: #000;
+    font-weight: normal;
+    text-decoration: none;
+
+    &:active,
+    &:focus,
+    &:hover {
+      color: #352063;
+    }
+  }
+}
+
+td {
+  padding: 20px 8px;
+  font-weight: bold;
+
+  ul {
+    display: block;
+    margin: 0;
+    padding: 0;
+  }
+
+  li {
+    font-weight: normal;
+    margin-left: 17px;
+  }
+}
+
+.track__title {
+  font-weight: bold;
+  margin: 0;
+  padding: 0;
+}

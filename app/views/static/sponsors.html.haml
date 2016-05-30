@@ -1,25 +1,25 @@
----
-title: Sponsors -- Write/Speak/Code International Conference
-sub_page: true
----
 - filter = 'conference'
-%h1 Thank you to our amazing sponsors!
+%section.content
+  %article
+    %h1
+      Thank you to our amazing sponsors!
 
-%p
-  Interested in
-  = link_to 'becoming a sponsor?', '/sponsor.html'
+    %p
+      Interested in
+      = link_to 'becoming a sponsor?', '/sponsor.html'
 
-- sponsor_levels.each do |level, order|
-  - sponsors = sponsors_for(filter, level)
+    - sponsor_levels.each do |level, order|
+      - sponsors = sponsors_for(filter, level)
 
-  - unless sponsors.empty?
-    %h2= "#{level.to_s.titleize}"
-    %ul.sponsors{ class: "#{level}" }
+      - unless sponsors.empty?
+        %h2
+          = "#{level.to_s.titleize}"
 
-      - sponsors.each do |slug, sponsor|
-        %li.sponsor
-          %a{ href: sponsor.url, target:'_blank', title: "#{sponsor.name}" }
-            = image_tag sponsor.image
-          %p.description
-            = link_to sponsor.name, sponsor.url
-            = sponsor.description
+        %ul.sponsor-level
+          - sponsors.each do |slug, sponsor|
+            %li.sponsor-info
+              %a.sponsor-logo{ href: sponsor.url, target:'_blank', title: "#{sponsor.name}" }
+                = image_tag sponsor.image
+              %p.sponsor-dek
+                = link_to sponsor.name, sponsor.url
+                = sponsor.description

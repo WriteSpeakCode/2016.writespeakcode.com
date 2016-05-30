@@ -1,0 +1,51 @@
+@import "speakers/mixins";
+@import "speakers/extends";
+
+.speakers {
+  align-items: stretch;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+.speaker {
+  display: block;
+  font-size: 12px;
+  font-size: 16px;
+  margin-bottom: 20px;
+  width: 100%;
+
+  @media screen and (min-width:640px) {
+    display: inline-block;
+    width: 48%;
+  }
+}
+
+h3 {
+  color: #352063;
+  font-size: 32px;
+  line-height: 40px;
+  margin: 0;
+  padding: 0;
+}
+
+h4 {
+  color: #352063;
+  font-size: 16px;
+  line-height: 20px;
+  margin: 0;
+  padding: 0;
+}
+
+.speaker__headshot {
+  img {
+    width: 100%;
+  }
+}
+
+.speaker__social {
+  display: block;
+}

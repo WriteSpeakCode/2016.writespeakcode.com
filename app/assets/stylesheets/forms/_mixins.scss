@@ -1,0 +1,50 @@
+@mixin placeholder-fade ($color) {
+  // Placeholder styles
+  ::-webkit-input-placeholder {
+    color: $color;
+    opacity: 1;
+    transition: opacity 0.35s ease-in-out;
+  }
+  :-moz-placeholder {
+    color: $color;
+    opacity: 1;
+    transition: opacity 0.35s ease-in-out;
+  }
+  ::-moz-placeholder {
+    color: $color;
+    opacity: 1;
+    transition: opacity 0.35s ease-in-out;
+  }
+  :-ms-input-placeholder {
+    color: $color;
+    opacity: 1;
+    transition: opacity 0.35s ease-in-out;
+  }
+
+  // Placeholder styles for focus
+  :focus::-webkit-input-placeholder {
+    opacity: 0;
+    transition: opacity 0.35s ease-in-out;
+  }
+  :focus:-moz-placeholder {
+    opacity: 0;
+    transition: opacity 0.35s ease-in-out;
+  }
+  :focus::-moz-placeholder {
+    opacity: 0;
+    transition: opacity 0.35s ease-in-out;
+  }
+  :focus:-ms-input-placeholder {
+    opacity: 0;
+    transition: opacity 0.35s ease-in-out;
+  }
+}
+
+// Input placeholder from github.com/michaelsacca/Compass-Placeholder-Text-Mixin
+@mixin input-placeholder {
+  &.placeholder { @content; }
+  &:-moz-placeholder { @content; }
+  &::-moz-placeholder { @content; }
+  &:-ms-input-placeholder { @content; }
+  &::-webkit-input-placeholder { @content; }
+}

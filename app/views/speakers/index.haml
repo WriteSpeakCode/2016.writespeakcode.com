@@ -1,29 +1,35 @@
-%ul.people_list
-  - @speakers.each do |speaker|
-    %li.person
-      %a{ id: speaker.slug }
+%section.content
+  %h1
+    Write/Speak/Code 2016 Speakers
 
-      .info
-        - if speaker.image
-          = image_tag "speaker-headshots/#{speaker.image}", alt: speaker.name
-        - if speaker.title || speaker.company
-          %br/
-          %span= speaker.display_title
+  %h2
+    Keynotes
 
-        %ul.social
-          - speaker.social_info.each do |type, url|
-            %li
-              %a{ href: url, target: '_blank' }
-                %span.fa{ class: "fa-#{type}" }
+  %h2
+    Speakers
 
-      .talk
-        %span.name= speaker.name
-        - talks_class = speaker.keynote ? 'keynote' : ''
-        %ul{ class: talks_class }
+  %h2
+    Panelists
+
+  %h2
+    Mentors
+
+  .speakers
+    - @speakers.each do |speaker|
+      .speaker
+        %a{ id: speaker.slug }
+        .speaker__headshot
+          - if speaker.image
+            = image_tag "speaker-headshots/#{speaker.image}", alt: speaker.name
+        %h3
+          = speaker.name
+        %h4
           - [speaker.talks].flatten.each do |talk|
-            %li{ class: talk_class(talk) }
-              = talk
-
+            = talk
         - if speaker.bio
-          .bio
+          .speaker__bio
             = speaker.bio.html_safe
+        .speaker__links
+          - speaker.social_info.each do |type, url|
+            %a.speaker__social{ href: url, target: '_blank' }
+              = type

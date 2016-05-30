@@ -6,6 +6,7 @@ Rails.application.routes.draw do
 
   resources :people, only: [:index]
 
-  root to: 'static#index'
+  root to: 'splash#index'
+
   get ':action', controller: 'static'
 end

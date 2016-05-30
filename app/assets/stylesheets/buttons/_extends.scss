@@ -1,0 +1,23 @@
+%button-text {
+  -webkit-font-smoothing: antialiased;
+  font-weight: bold;
+  letter-spacing: 2px;
+  text-align: center;
+  text-decoration: none !important;
+  text-transform: uppercase;
+}
+
+%button {
+  @extend %button-text;
+  cursor: pointer;
+  display: inline-block;
+  height: 48px;
+  line-height: 48px;
+  margin: 0;
+  overflow: hidden;
+  padding: 0 24px;
+  position: relative;
+  -webkit-touch-callout: none;
+  transition: all ease 0.06s;
+  vertical-align: middle;
+}

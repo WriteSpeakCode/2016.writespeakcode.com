@@ -1,0 +1,13 @@
+@import "forms/extends";
+@import "forms/mixins";
+
+input {
+  border: none;
+  color: #706f6f;
+  height: 48px;
+  line-height: 48px;
+  margin-bottom: 10px;
+  text-align: center;
+  padding: 10px;
+  width: 100%;
+}

@@ -1,0 +1,15 @@
+// Mixin to center something. Works even when:
+// 1. You don't know know how big it is
+// 2. You don't know how big the container is
+//
+// NOTE: parent must be position: relative;
+@mixin centerer {
+  left: 50%;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.centerer {
+  @include centerer;
+}
