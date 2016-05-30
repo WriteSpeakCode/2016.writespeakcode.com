@@ -28,7 +28,7 @@
 
 .nav__list {
   align-items: stretch;
-  display: flex;
+  display: none;
   flex-direction: column;
   justify-content: space-around;
   margin: 0;
@@ -37,6 +37,7 @@
   width: 100%;
 
   @media screen and (min-width:640px) {
+    display: flex;
     flex-direction: row;
     flex-wrap: wrap;
   }

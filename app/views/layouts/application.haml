@@ -18,7 +18,9 @@
     %nav.nav
       %a.nav__logo{ href: "/" }
         = image_tag "conf-2016-logo-long.svg"
-      %ul.nav__list
+      %a#js-mobile-menu{ href: "/" }
+        open
+      %ul.nav__list#js-navigation-menu
         %li.nav__item
           %a.nav__link{ href: "/pages/schedule" }
             Schedule
