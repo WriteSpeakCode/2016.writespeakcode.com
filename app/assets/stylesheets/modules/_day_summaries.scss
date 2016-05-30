@@ -17,6 +17,10 @@
 
   @media screen and (min-width:800px) {
     width: 30%;
+
+    .day_summaries--page & {
+      width: 48%;
+    }
   }
 }
 
