@@ -18,6 +18,14 @@ Please take a look at our [contributing](CONTRIBUTE.md) guidelines. We have volu
 bundle install
 ```
 
+### Run set up script
+
+Ensure Postgres is running.
+
+```bash
+bundle exec ./bin/setup
+```
+
 ### Launch the server
 
 ```bash
