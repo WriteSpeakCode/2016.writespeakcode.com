@@ -1,17 +1,26 @@
 .day_summaries {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+  flex-direction: column;
+
+  @media screen and (min-width:800px) {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
 }
 
 .day {
   display: flex;
   flex-direction: column;
-  width: 30%;
+  margin-top: 50px;
+  width: 100%;
+
+  @media screen and (min-width:800px) {
+    width: 30%;
+  }
 }
 
 .day--4 {
-  margin-top: 50px;
   width: 100%;
 }
 
