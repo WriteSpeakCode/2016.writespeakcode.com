@@ -15,11 +15,12 @@
         %h2
           = "#{level.to_s.titleize}"
 
-        %ul.sponsor-level
+        .sponsor-level
+
           - sponsors.each do |slug, sponsor|
-            %li.sponsor-info
-              %a.sponsor-logo{ href: sponsor.url, target:'_blank', title: "#{sponsor.name}" }
+            .sponsor__info
+              %a.sponsor__logo{ href: sponsor.url, target:'_blank', title: "#{sponsor.name}" }
                 = image_tag sponsor.image
-              %p.sponsor-dek
+              %p.sponsor__description
                 = link_to sponsor.name, sponsor.url
                 = sponsor.description

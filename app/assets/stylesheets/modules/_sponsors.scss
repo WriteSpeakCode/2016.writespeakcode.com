@@ -1,20 +1,34 @@
 .sponsor-level {
+  align-items: stretch;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: space-around;
   margin: 0;
   padding: 0;
+
+  @media screen and (min-width:900px) {
+    flex-direction: row;
+  }
+
 }
 
-.sponsor-info {
-  background-color: #f9f9f9;
+.sponsor__info {
   color: #111;
-  display: block;
+  display: inline-block;
   margin: 0;
   padding: 40px;
+  width: 100%;
+
+  @media screen and (min-width:900px) {
+    width: 50%;
+  }
 }
 
-.sponsor-logo {
-  display: inline-block;
+.sponsor__logo {
+  display: block;
 
   img {
-    height: 100px;
+    width: 100%;
   }
 }
