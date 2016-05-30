@@ -1,6 +1,3 @@
-@import "navigation/mixins";
-@import "navigation/extends";
-
 .nav {
   align-items: stretch;
   background-color: #352063;
@@ -72,6 +69,7 @@
 
 .nav__logo {
   display: block;
+  margin: 0 20px;
   text-align: center;
 
   img {
@@ -81,6 +79,10 @@
     @media screen and (min-width:640px) {
       height: 90px;
     }
+  }
+
+  .nav--splash & {
+    display: none;
   }
 }
 

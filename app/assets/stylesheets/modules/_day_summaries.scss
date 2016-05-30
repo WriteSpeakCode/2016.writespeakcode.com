@@ -1,0 +1,50 @@
+.day_summaries {
+  display: flex;
+  flex-direction: column;
+
+  @media screen and (min-width:800px) {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+}
+
+.day {
+  display: flex;
+  flex-direction: column;
+  margin-top: 50px;
+  width: 100%;
+
+  @media screen and (min-width:800px) {
+    width: 30%;
+  }
+}
+
+.day--4 {
+  width: 100%;
+}
+
+.day__title {
+  display: block;
+  font-size: 32px;
+  line-height: 50px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.day__icon {
+  background-color: #352063;
+  color: #fff;
+  height: 150px;
+  margin: 0 auto;
+  text-align: center;
+  width: 150px;
+
+  .fa {
+    line-height: 150px;
+
+    &::before {
+      font-size: 100px;
+    }
+  }
+}

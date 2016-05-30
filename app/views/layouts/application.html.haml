@@ -15,44 +15,7 @@
     = javascript_include_tag "all"
 
   %body
-    %section.hero
-      .hero__content
-        .hero__logo
-          %a{ href: "/" }
-            = image_tag "conf-2016-logo.svg"
-
-        .hero__title
-          %p
-            June 15th - 18th
-            %br
-            325 North Wells Street
-            %br
-            Chicago, IL
-
-        .hero__copy
-          %a.button{ href: "/tickets" }
-            Buy Tickets
-
-          %p
-            Join us for
-            %strong
-              4
-            intense days of workshops, seminars, and talks.
-
-          %p
-            Let's build the blueprint that will take your career to the next level!
-
-          %h2
-            Childcare Available!
-
-          = render "partials/mailchimp"
-
-        .hero__small
-          %p
-            Subscribe to our conference mailing list to receive conference updates.
-
-    .nav--splash
-      = render "partials/nav"
+    = render "partials/nav"
 
     = yield
 

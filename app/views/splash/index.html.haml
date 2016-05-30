@@ -1,5 +1,7 @@
 %section.content
   %article
+    = render "/partials/eventbrite_countdown2016"
+
     %h1
       Empowering women developers to become thought leaders, conference speakers, and open source contributors.
 
@@ -28,6 +30,12 @@
       The curriculum covers topics from giving and receiving feedback
       to self-care and connects each attendee to mentors in the areas of
       writing, speaking, and several languages of code.
+
+%section.content
+  %a.button{ href: "tickets.html" }
+    Buy Tickets
+
+= render "partials/day_summaries"
 
 %section.content
   %h2
