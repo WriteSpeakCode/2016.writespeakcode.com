@@ -18,8 +18,8 @@
     %nav.nav
       %a.nav__logo{ href: "/" }
         = image_tag "conf-2016-logo-long.svg"
-      %a#js-mobile-menu{ href: "/" }
-        open
+      %a.nav__hamburger#js-mobile-menu{ href: "#" }
+        %i.fa.fa-bars
       %ul.nav__list#js-navigation-menu
         %li.nav__item
           %a.nav__link{ href: "/pages/schedule" }
