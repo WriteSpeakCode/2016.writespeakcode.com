@@ -32,4 +32,4 @@
         .speaker__links
           - speaker.social_info.each do |type, url|
             %a.speaker__social{ href: url, target: '_blank' }
-              = type
+              %i.fa{ class: "fa-#{type}" }
