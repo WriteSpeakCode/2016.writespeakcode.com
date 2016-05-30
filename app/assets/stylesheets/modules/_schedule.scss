@@ -60,6 +60,7 @@
 }
 
 table {
+  width: 100%;
 }
 
 th {
@@ -84,7 +85,6 @@ tr,
   background-color: #fff;
   border-bottom: 1px solid #f9f9f9;
   font-size: 14px;
-  line-height: 30px;
   vertical-align: text-top;
 }
 
@@ -93,38 +93,44 @@ tr,
 }
 
 .row--all {
-  background-color: #f4dbb8;
+  background-color: #fff4ce;
 }
 
 .row--keynote {
-  background-color: #988db0;
+  background-color: #d7dae5;
 
   a {
     border-bottom: 2px solid;
-    color: #fff;
+    color: #000;
+    font-weight: normal;
     text-decoration: none;
 
     &:active,
     &:focus,
     &:hover {
-      color: #eaac47;
+      color: #352063;
     }
   }
 }
 
 td {
-  padding: 0 8px;
+  padding: 20px 8px;
+  font-weight: bold;
 
-  ul,
-  li {
+  ul {
     display: block;
     margin: 0;
     padding: 0;
   }
 
-
+  li {
+    font-weight: normal;
+    margin-left: 17px;
+  }
 }
 
 .track__title {
   font-weight: bold;
+  margin: 0;
+  padding: 0;
 }
