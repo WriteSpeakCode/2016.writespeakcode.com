@@ -57,3 +57,87 @@ docusign:
   description: is the fastest, most reliable way to transform every signature and approval into a simple digital action. With more than 50 million users, DocuSign works with all the apps and devices you already use, so you can safely access, sign and approve documents from any mobile device, anywhere in the world. Whether you’re signing school permission slips or buying your dream house, DocuSign is so simple to learn and easy to use, you’ll never want to go back to the old way. DocuSign It and keep life moving forward.
   pages:
     - sponsors
+
+polymathic:
+  name: Polymathic
+  url: http://teampolymathic.com/
+  email:
+  image: /assets/sponsors/polymathic.png
+  frontpage: true
+  sponsoring: conference
+  sponsor_level: platinum
+  description:
+  pages:
+    - sponsors
+
+wtm:
+  name: Women Techmakers
+  url: http://teampolymathic.com/
+  email:
+  image: /assets/sponsors/women_techmakers.png
+  frontpage: true
+  sponsoring: conference
+  sponsor_level: platinum
+  description:
+  pages:
+    - sponsors
+
+google:
+  name: Google
+  url: https://www.google.com/
+  email:
+  image: /assets/sponsors/google.png
+  frontpage: true
+  sponsoring: conference
+  sponsor_level: platinum
+  description:
+  pages:
+    - sponsors
+
+kcura:
+  name: kCura
+  url: https://www.kcura.com/
+  email:
+  image: /assets/sponsors/kcura.png
+  frontpage: true
+  sponsoring: conference
+  sponsor_level: gold
+  description:
+  pages:
+    - sponsors
+
+devmynd:
+  name: devmynd
+  url: https://www.devmynd.com/
+  email:
+  image: /assets/sponsors/devmynd.png
+  frontpage: true
+  sponsoring: conference
+  sponsor_level: silver
+  description:
+  pages:
+    - sponsors
+
+devbootcamp:
+  name: Dev Bootcamp
+  url: http://devbootcamp.com/
+  email:
+  image: /assets/sponsors/dev_bootcamp.png
+  frontpage: true
+  sponsoring: conference
+  sponsor_level: bronze
+  description:
+  pages:
+    - sponsors
+
+github:
+  name: GitHub
+  url: https://github.com/
+  email:
+  image: /assets/sponsors/github.png
+  frontpage: true
+  sponsoring: conference
+  sponsor_level: bronze
+  description:
+  pages:
+    - sponsors
