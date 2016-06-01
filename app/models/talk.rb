@@ -13,6 +13,10 @@ class Talk < ActiveRecord::Base
   validates :session_type, presence: true
   validates :day, presence: true
 
+  def slug
+    title.parameterize
+  end
+
   private
 
   def self.where_session_type(session_type)
