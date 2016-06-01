@@ -3,6 +3,7 @@ class Person < ActiveRecord::Base
   validates :email, presence: true, email: true
 
   scope :displayable, -> { where(display: true) }
+  scope :speakers_and_mentors, -> { where(mentor: true).order(:name) }
 
   def slug
     name.parameterize
