@@ -3,19 +3,24 @@
     Write/Speak/Code 2016 Talks
 
   %h2
-    Keynotes
+    Keynotes (#{@keynotes.count})
+    .speakers
+      - @keynotes.each do |talk|
+        .speaker
+          / %a{ id: talk.slug }
 
+          %h3
+            = talk.title
+          %h4
+            - talk.people.each do |person|
+              = link_to person.name, "#{people_path}##{person.slug}"
+          - if talk.description
+            .speaker__bio
+              = talk.description.html_safe
   %h2
-    Conference Sessions
-
-  %h2
-    1st Year Track
-
-  %h2
-    Alumni Track
-
-  .speakers
-    - @talks.each do |talk|
+    Conference Sessions (#{@both_talks.count})
+    .speakers
+    - @both_talks.each do |talk|
       .speaker
         / %a{ id: talk.slug }
 
@@ -27,3 +32,34 @@
         - if talk.description
           .speaker__bio
             = talk.description.html_safe
+  %h2
+    1st Year Track (#{@first_year_talks.count})
+    .speakers
+    - @first_year_talks.each do |talk|
+      .speaker
+        / %a{ id: talk.slug }
+
+        %h3
+          = talk.title
+        %h4
+          - talk.people.each do |person|
+            = link_to person.name, "#{people_path}##{person.slug}"
+        - if talk.description
+          .speaker__bio
+            = talk.description.html_safe
+
+  %h2
+    Alumni Track (#{@alumna_talks.count})
+    .speakers
+      - @alumna_talks.each do |talk|
+        .speaker
+          / %a{ id: talk.slug }
+
+          %h3
+            = talk.title
+          %h4
+            - talk.people.each do |person|
+              = link_to person.name, "#{people_path}##{person.slug}"
+          - if talk.description
+            .speaker__bio
+              = talk.description.html_safe
