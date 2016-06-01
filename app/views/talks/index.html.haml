@@ -1,23 +1,30 @@
 %section.content
   %h1
     Write/Speak/Code 2016 Talks
+  %a{ href: "#keynotes" } Keynotes
+  |
+  %a{ href: "#both" } Conference Sessions
+  |
+  %a{ href: "#first_year" } First Year Track
+  |
+  %a{ href: "#alumna" } Alumna Track
 
-  %h2
-    Keynotes (#{@keynotes.count})
+  %h2#keynotes
+    Keynotes
   .speakers
     =render partial: 'talk', collection: @keynotes
 
-  %h2
-    Conference Sessions (#{@both_talks.count})
+  %h2#both
+    Conference Sessions
   .speakers
     = render partial: 'talk', collection: @both_talks
 
-  %h2
-    1st Year Track (#{@first_year_talks.count})
+  %h2#first_year
+    1st Year Track
   .speakers
     = render partial: 'talk', collection: @first_year_talks
 
-  %h2
-    Alumni Track (#{@alumna_talks.count})
+  %h2#alumna
+    Alumni Track
   .speakers
     = render partial: 'talk', collection: @alumna_talks
