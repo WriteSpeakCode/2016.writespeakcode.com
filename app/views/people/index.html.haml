@@ -1,29 +1,20 @@
-%ul.people_list
-  - @people.each do |person|
-    %li.person
-      %a{ id: person.slug }
-
-      .info
-        - if person.photo_path.present?
-          = image_tag person.photo_path, alt: person.name
-        - if person.title.empty?
-          %br/
-          %span= person.title
-
-        %ul.social
-          - person.social_info.each do |type, url|
-            %li
-              %a{ href: url, target: '_blank' }
-                %span.fa{ class: "fa-#{type}" }
-
-      .talk
-        %span.name= person.name
-        -#- talks_class = person.keynote ? 'keynote' : ''
-        -#%ul{ class: talks_class }
+%section.content
+  .speakers
+    - @people.each do |person|
+      .speaker
+        %a{ id: person.slug }
+        .speaker__headshot
+          - if person.image_filename
+            = image_tag "speaker-headshots/#{person.image_filename}", alt: person.name
+        %h3
+          = person.name
+        -#%h4
           -#- [person.talks].flatten.each do |talk|
-            -#%li{ class: talk_class(talk) }
-              -#= talk
-
+            -#= talk
         - if person.bio
-          .bio
+          .speaker__bio
             = person.bio.html_safe
+        .speaker__links
+          - person.social_info.each do |type, url|
+            %a.speaker__social{ href: url, target: '_blank' }
+              %i.fa{ class: "fa-#{type}" }

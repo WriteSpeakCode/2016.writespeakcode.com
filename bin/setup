@@ -9,14 +9,6 @@ Dir.chdir APP_ROOT do
   # This script is a starting point to setup your application.
   # Add necessary setup steps to this file:
 
-  puts "== Checking for dependencies =="
-  unless system("command -v foreman > /dev/null;")
-    puts "Foreman is not installed."
-    puts "run `gem install foreman`"
-    puts "'See https://github.com/ddollar/foreman for install instructions."
-    exit
-  end
-
   puts "== Installing dependencies =="
   system "gem install bundler --conservative"
   system "bundle check || bundle install"

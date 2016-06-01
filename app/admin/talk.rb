@@ -15,5 +15,4 @@ ActiveAdmin.register Talk do
     column :keynote
     actions
   end
-
 end
