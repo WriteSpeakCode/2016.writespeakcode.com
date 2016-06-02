@@ -6,6 +6,8 @@ Rails.application.routes.draw do
 
   resources :people, only: [:index]
 
+  resources :talks, only: [:index]
+
   get 'people/speakers', to: 'people#speakers'
 
   root to: 'static#index'

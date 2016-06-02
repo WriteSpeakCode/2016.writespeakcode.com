@@ -1,0 +1,13 @@
+.speaker
+  %a{ id: talk.slug }
+
+  %h3
+    = talk.title
+  %h4
+    %small
+      %strong #{talk_date(talk.day)}
+  - talk.people.each do |person|
+    = link_to person.name, "#{people_path}##{person.slug}"
+  - if talk.description
+    .talk__description
+      = talk.description.html_safe
