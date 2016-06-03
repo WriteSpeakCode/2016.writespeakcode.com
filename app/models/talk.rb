@@ -26,4 +26,8 @@ class Talk < ActiveRecord::Base
   def self.where_day(day)
     where("day = ?", Talk.days[day])
   end
+
+  def self.hour
+    self.start_date.to_formatted_s
+  end
 end
