@@ -3,28 +3,35 @@
     Write/Speak/Code 2016 Talks
   %a{ href: "#keynotes" } Keynotes
   |
-  %a{ href: "#both" } Conference Sessions
+  %a{ href: "#write" } Wednesday 6/15
   |
-  %a{ href: "#first_year" } First Year Track
+  %a{ href: "#speak" } Thursday 6/16
   |
-  %a{ href: "#alumna" } Alumna Track
+  %a{ href: "#code" } Friday 6/17
+  |
+  %a{ href: "#career" } Saturday 6/18
 
   %h2#keynotes
     Keynotes
   .speakers
     =render partial: 'talk', collection: @keynotes
 
-  %h2#both
-    Conference Sessions
+  %h2#write
+    Write | Wednesday June 15
   .speakers
-    = render partial: 'talk', collection: @both_talks
+    = render partial: 'talk', collection: @write
 
-  %h2#first_year
-    1st Year Track
+  %h2#speak
+    Speak | Thursday June 16
   .speakers
-    = render partial: 'talk', collection: @first_year_talks
+    = render partial: 'talk', collection: @speak
 
-  %h2#alumna
-    Alumni Track
+  %h2#code
+    Code | Friday June 17
   .speakers
-    = render partial: 'talk', collection: @alumna_talks
+    = render partial: 'talk', collection: @code
+
+  %h2#career
+    Career | Saturday June 18
+  .speakers
+    = render partial: 'talk', collection: @career
