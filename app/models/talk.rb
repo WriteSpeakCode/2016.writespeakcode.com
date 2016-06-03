@@ -7,7 +7,7 @@ class Talk < ActiveRecord::Base
 
   scope :talks, -> { where_session_type(:talk) }
   scope :keynotes, -> { where(keynote: true) }
-  scope :default_order, -> { order(keynote: :desc).order(:title) }
+  scope :default_order, -> { order(keynote: :desc).order(:day).order(:start_time) }
 
   validates :title, presence: true
   validates :session_type, presence: true
@@ -27,7 +27,4 @@ class Talk < ActiveRecord::Base
     where("day = ?", Talk.days[day])
   end
 
-  def self.to_hour
-    self.start_time.to_formatted_s
-  end
 end

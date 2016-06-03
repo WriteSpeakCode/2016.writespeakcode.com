@@ -14,7 +14,4 @@ module TalksHelper
     end
   end
 
-  def to_hour
-    self.start_time.to_formatted_s
-  end
 end
