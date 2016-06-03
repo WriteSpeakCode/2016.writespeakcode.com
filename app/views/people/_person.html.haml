@@ -7,7 +7,7 @@
     = person.name
   %h4
     - [person.talks].flatten.each do |talk|
-      = link_to talk.name, "#{talks_path}##{talk.slug}"
+      = link_to talk.title, "#{talks_path}##{talk.slug}"
   - if person.bio
     .speaker__bio
       = person.bio.html_safe
