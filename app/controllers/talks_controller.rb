@@ -2,8 +2,9 @@ class TalksController < ApplicationController
   def index
     # @talks = Talk.all
     @keynotes = Talk.keynotes
-    @both_talks = Talk.where(first_year_track: true).where(alumna_track: true).where(keynote: false)
-    @alumna_talks = Talk.where(alumna_track: true).where(keynote: false)
-    @first_year_talks = Talk.where(first_year_track: true).where(keynote: false)
+    @write = Talk.where_day("write").where(keynote: false)
+    @speak = Talk.where_day("speak").where(keynote: false)
+    @code = Talk.where_day("code").where(keynote: false)
+    @career = Talk.where_day("career").where(keynote: false)
   end
 end

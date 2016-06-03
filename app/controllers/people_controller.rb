@@ -5,6 +5,7 @@ class PeopleController < ApplicationController
 
   def speakers
     @people = Person.speakers_and_mentors.displayable.decorate
+    @keynotes = Person.keynote_speakers.displayable.decorate
     render 'index'
   end
 end

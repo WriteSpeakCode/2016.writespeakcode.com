@@ -6,8 +6,10 @@
   %h4
     %small
       %strong #{talk_date(talk.day)}
+      -if talk.start_time
+        = talk.start_time.strftime("%I:%M%p")
   - talk.people.each do |person|
-    = link_to person.name, "#{people_path}##{person.slug}"
+    = link_to person.name, "#{people_speakers_path}##{person.slug}"
   - if talk.description
     .talk__description
       = talk.description.html_safe
