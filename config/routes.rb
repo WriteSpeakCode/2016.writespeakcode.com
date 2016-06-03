@@ -2,7 +2,7 @@ Rails.application.routes.draw do
   devise_for :admin_users, ActiveAdmin::Devise.config
   ActiveAdmin.routes(self)
 
-  resources :speakers, only: [:index]
+  # resources :speakers, only: [:index]
 
   resources :people, only: [:index]
 
