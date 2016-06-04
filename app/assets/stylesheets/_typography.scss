@@ -15,11 +15,17 @@ body {
 }
 
 strong {
-  color: #eaac47;
+  color: $gold;
   font-size: 1.75em;
   font-weight: bold;
 }
 
 h1 {
-  color: #eaac47;
+  color: $gold;
+}
+
+a {
+  color: $purple;
+  &:visited { color: $purple; }
+  &:hover, &:focus { color: $red; }
 }
