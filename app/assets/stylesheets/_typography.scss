@@ -29,3 +29,7 @@ a {
   &:visited { color: $purple; }
   &:hover, &:focus { color: $red; }
 }
+
+.callout {
+  color: $gold;
+}

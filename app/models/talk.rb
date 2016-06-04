@@ -6,7 +6,8 @@ class Talk < ActiveRecord::Base
   has_many :people, through: :talk_speakers
 
   scope :talks, -> { where_session_type(:talk) }
-  scope :default_order, -> { order(keynote: :desc).order(:day).order(:start_time) }
+  scope :day_order, -> { order(:day).order(:start_time) }
+  scope :default_order, -> { order(keynote: :desc).day_order }
   scope :keynotes, -> { where(keynote: true).default_order }
 
   validates :title, presence: true
