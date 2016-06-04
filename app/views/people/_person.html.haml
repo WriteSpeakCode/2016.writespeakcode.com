@@ -6,8 +6,8 @@
   %h3
     = person.name
   %h4
-    - person.talks.each do |talk|
-      = link_to talk.title, "#{talks_path}##{talk.slug}"
+    = speaker_talks(person)
+
   - if person.bio
     .speaker__bio
       = person.bio.html_safe
