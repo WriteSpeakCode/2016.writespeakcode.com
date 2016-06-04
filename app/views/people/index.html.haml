@@ -1,16 +1,16 @@
 %section.content
-%h1
-  Write/Speak/Code 2016 Speakers
-%a{ href: "#keynotes" } Keynotes
-|
-%a{ href: "#speakers" } Session Speakers
+  %h1
+    Write/Speak/Code 2016 Speakers
+  %a{ href: "#keynotes" } Keynotes
+  |
+  %a{ href: "#speakers" } Session Speakers
 
-%h2#keynotes
-  Keynotes
-.speakers
-  =render partial: 'person', collection: @keynotes
+  %h2#keynotes
+    Keynotes
+  .speakers
+    =render partial: 'person', collection: @keynotes
 
-%h2#speakers
-  Speakers
-.speakers
-  =render partial: 'person', collection: @people
+  %h2#speakers
+    Speakers
+  .speakers
+    =render partial: 'person', collection: @people
