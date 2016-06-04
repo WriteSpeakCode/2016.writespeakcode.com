@@ -21,3 +21,34 @@
 
 en:
   hello: "Hello world"
+  tracks:
+    all: "All Tracks"
+    alumna: "Alumna Track"
+    first: "First-year Track"
+  talks:
+    write:
+      day: "Wed, Jun 15"
+      theme:
+        first: "Write"
+        alumna: "Leadership"
+        all: "Write/Leadership"
+    speak:
+      day: "Thu, Jun 16"
+      theme:
+        first: "Speak"
+        alumna: "Visibility"
+        all: "Speak/Visibility"
+    code:
+      day: "Fri, Jun 17"
+      theme:
+        first: "Code"
+        alumna: "Project"
+        all: "Code"
+    career:
+      day: "Sat, Jun 18"
+      theme:
+        first: "Self-care & Career"
+        alumna: "Self-care & Career"
+        all: "Self-care & Career"
+
+

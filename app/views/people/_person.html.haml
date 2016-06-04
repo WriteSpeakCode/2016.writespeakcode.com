@@ -6,7 +6,7 @@
   %h3
     = person.name
   %h4
-    - [person.talks].flatten.each do |talk|
+    - person.talks.each do |talk|
       = link_to talk.title, "#{talks_path}##{talk.slug}"
   - if person.bio
     .speaker__bio
