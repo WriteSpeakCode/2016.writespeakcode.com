@@ -6,7 +6,12 @@ class Person < ActiveRecord::Base
   validates :email, presence: true, email: true
 
   scope :displayable, -> { where(display: true) }
-  scope :speakers_and_mentors, -> { where(mentor: true).order(:name) }
+
+  def self.speakers_and_mentors(include_keynotes = true)
+    scope = where(mentor: true).order(:name)
+    scope.where(keynote: false) unless include_keynotes
+    scope
+  end
 
   def self.keynote_speakers
     joins(:talk_speakers).joins(:talks).where("talks.keynote = true").distinct
