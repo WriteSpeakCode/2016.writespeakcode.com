@@ -9,7 +9,7 @@ class Person < ActiveRecord::Base
   scope :speakers_and_mentors, -> { where(mentor: true).order(:name) }
 
   def self.keynote_speakers
-    joins(:talk_speakers).joins(:talks).where("talks.keynote = true")
+    joins(:talk_speakers).joins(:talks).where("talks.keynote = true").distinct
   end
 
   def slug
