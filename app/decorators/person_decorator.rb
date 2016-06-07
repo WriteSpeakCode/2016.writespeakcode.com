@@ -2,11 +2,11 @@ class PersonDecorator < Draper::Decorator
   delegate_all
 
   def twitter_url
-    "http://twitter.com/#{twitter}" unless twitter.nil? || twitter.empty?
+    "http://twitter.com/#{twitter}" if twitter.present?
   end
 
   def github_url
-    "http://github.com/#{github}" unless github.nil? || github.empty?
+    "http://github.com/#{github}" if github.present?
   end
 
   def social_info
