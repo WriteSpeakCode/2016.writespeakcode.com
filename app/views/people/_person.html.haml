@@ -1,17 +1,18 @@
 .speaker
   %a{ id: person.slug }
   .speaker__headshot
-    - if person.image_filename
+    - unless person.image_filename.empty?
       = image_tag "speaker-headshots/#{person.image_filename}", alt: person.name
   %h3
     = person.name
   %h4
     = speaker_talks(person)
 
-  - if person.bio
+  - unless person.bio.nil? || person.bio.empty?
     .speaker__bio
       = person.bio.html_safe
   .speaker__links
     - person.social_info.each do |type, url|
-      %a.speaker__social{ href: url, target: '_blank' }
-        %i.fa{ class: "fa-#{type}" }
+      - unless url.nil? || url.empty?
+        %a.speaker__social{ href: url, target: '_blank' }
+          %i.fa{ class: "fa-#{type}" }
