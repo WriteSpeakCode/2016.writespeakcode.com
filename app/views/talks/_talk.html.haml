@@ -11,6 +11,6 @@
 
   %p= talk_speakers(talk)
 
-  - if talk.description
+  - if talk.description.present?
     .talk__description
       = talk.description.html_safe
