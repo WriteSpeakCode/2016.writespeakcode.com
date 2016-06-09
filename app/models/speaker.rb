@@ -11,11 +11,11 @@ class Speaker < ActiveYaml::Base
   set_filenames *(all_filenames)
 
   def twitter_url
-    "http://twitter.com/#{twitter}" if twitter
+    "http://twitter.com/#{twitter}" if twitter.present?
   end
 
   def github_url
-    "http://github.com/#{github}" if github
+    "http://github.com/#{github}" if github.present?
   end
 
   def social_info
