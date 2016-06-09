@@ -1,12 +1,11 @@
-@import "typography/fonts";
 @import "typography/functions";
 @import "typography/extends";
 @import "typography/mixins";
 
 body {
-  background-color: #fff;
-  color: #111;
-  font-family: "Montserrat";
+  background-color: $white;
+  color: $charcoal;
+  font-family: "Montserrat", sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
@@ -22,12 +21,43 @@ strong {
 
 h1 {
   color: $gold;
+  font-size: 48px;
+  line-height: 48px;
+}
+
+h2 {
+  color: $purple;
+  font-size: 32px;
+  line-height: 32px;
+}
+
+h3 {
+  color: $boulder;
+  font-size: 20px;
+  line-height: 24px;
+  margin: 0;
+  padding: 0;
+}
+
+h4 {
+  color: $purple;
+  font-size: 16px;
+  line-height: 24px;
+  margin: 0;
+  padding: 0;
 }
 
 a {
   color: $purple;
-  &:visited { color: $purple; }
-  &:hover, &:focus { color: $red; }
+
+  &:visited {
+    color: $purple;
+  }
+
+  &:hover,
+  &:focus {
+    color: $red;
+  }
 }
 
 .callout {

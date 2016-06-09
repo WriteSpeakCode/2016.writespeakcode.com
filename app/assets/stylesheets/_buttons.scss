@@ -4,7 +4,7 @@
 .button {
   @extend %button;
   background-color: $gold;
-  color: #ffffff;
+  color: $white !important;
   display: block;
   width: 100%;
 

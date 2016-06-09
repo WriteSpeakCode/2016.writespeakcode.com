@@ -1,4 +1,5 @@
 // These files need to be loaded before any other components
+@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
 @import "colors";
 @import "utils";
 
@@ -30,8 +31,8 @@
 
 .content {
   @include rwd-content;
-  background-color: #fff;
-  color: #111;
+  background-color: $white;
+  color: $charcoal;
   padding: 20px;
 }
 

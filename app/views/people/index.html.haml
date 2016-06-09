@@ -1,9 +1,13 @@
 %section.content
   %h1
     Write/Speak/Code 2016 Speakers
-  %a{ href: "#keynotes" } Keynotes
-  |
-  %a{ href: "#speakers" } Session Speakers
+
+  %nav.sub
+    %ul.sub__list
+      %li.sub__item
+        = link_to  'Keynotes', '#keynotes'
+      %li.sub__item
+        = link_to  'Session Speakers', '#speakers'
 
   %h2#keynotes
     Keynotes

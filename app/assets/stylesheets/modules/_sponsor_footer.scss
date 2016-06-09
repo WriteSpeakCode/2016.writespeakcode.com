@@ -1,7 +1,7 @@
 .sponsors {
-  background-color: #f9f9f9;
+  background-color: $alabaster;
   display: none;
-  color: #111;
+  color: $charcoal;
   padding: 40px;
   text-align: center;
 
@@ -16,7 +16,7 @@
 }
 
 .sponsors__title {
-  color: #352063;
+  color: $purple;
   font-size: 36px;
   font-weight: bold;
   line-height: 42px;

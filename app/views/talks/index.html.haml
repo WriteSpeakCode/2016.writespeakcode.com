@@ -1,15 +1,19 @@
 %section.content
   %h1
     Write/Speak/Code 2016 Talks
-  %a{ href: "#keynotes" } Keynotes
-  |
-  %a{ href: "#write" } Wednesday 6/15
-  |
-  %a{ href: "#speak" } Thursday 6/16
-  |
-  %a{ href: "#code" } Friday 6/17
-  |
-  %a{ href: "#career" } Saturday 6/18
+
+  %nav.sub
+    %ul.sub__list
+      %li.sub__item
+        = link_to  'Keynotes', '#keynotes'
+      %li.sub__item
+        = link_to  'Wednesday', '#write'
+      %li.sub__item
+        = link_to  'Thursday', '#speak'
+      %li.sub__item
+        = link_to  'Friday', '#code'
+      %li.sub__item
+        = link_to  'Saturday', '#career'
 
   %h2#keynotes
     Keynotes

@@ -23,7 +23,7 @@
     &:active,
     &:focus,
     &:hover {
-      color: #eaac47;
+      color: $gold;
     }
   }
 }
@@ -61,8 +61,8 @@ table {
 }
 
 th {
-  background-color: #352063;
-  color: #fff;
+  background-color: $purple;
+  color: $white;
   font-size: 16px;
   line-height: 40px;
   text-align: center;
@@ -79,7 +79,7 @@ th {
 
 tr,
 .row {
-  background-color: #fff;
+  background-color: $white;
   border-bottom: 1px solid #f9f9f9;
   font-size: 14px;
   vertical-align: text-top;
@@ -105,7 +105,7 @@ tr,
     &:active,
     &:focus,
     &:hover {
-      color: #352063;
+      color: $purple;
     }
   }
 }

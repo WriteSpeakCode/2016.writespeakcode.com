@@ -1,7 +1,7 @@
 .nav {
   align-items: stretch;
-  background-color: #352063;
-  color: #fff;
+  background-color: $purple;
+  color: $white;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -13,13 +13,13 @@
   }
 
   a {
-    color: #fff;
+    color: $white;
     text-decoration: none;
 
     &:active,
     &:focus,
     &:hover {
-      color: #eaac47;
+      color: $gold;
     }
   }
 }
