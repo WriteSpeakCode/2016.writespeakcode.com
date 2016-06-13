@@ -21,6 +21,7 @@
             .sponsor__info
               %a.sponsor__logo{ href: sponsor.url, target:'_blank', title: "#{sponsor.name}" }
                 = image_tag sponsor.image
-              %p.sponsor__description
-                = link_to sponsor.name, sponsor.url
-                = sponsor.description
+              - unless sponsor.sponsor_level == "bronze"
+                %p.sponsor__description
+                  = link_to sponsor.name, sponsor.url
+                  = sponsor.description
