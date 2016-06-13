@@ -141,3 +141,15 @@ github:
   description:
   pages:
     - sponsors
+
+stride:
+  name: Stride
+  url: http:/www.stridenyc.com/
+  email:
+  image: /assets/sponsors/stride.jpg
+  frontpage: true
+  sponsoring: conference
+  sponsor_level: bronze
+  description: Stride is a woman-run Agile software development consultancy in NYC. We co-locate with engineering teams (like Plated, Saks, Daily Beast, Paddle8, Sailthru, XO Group, Intent Media) to help them up thier game. Think of us as Agile SWAT teams. We embed with teams, work alongside their engineers and help them improve code quality and their Agile process in perpetuity. We help companies to  build and validate their MVP, scale their app or their development team and help improve their process (TDD, Refactoring, Microservices, Estimates, Continuous Delivery, etc).
+  pages:
+    - sponsors
