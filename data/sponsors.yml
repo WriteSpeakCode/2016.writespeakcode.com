@@ -66,7 +66,7 @@ polymathic:
   frontpage: true
   sponsoring: conference
   sponsor_level: platinum
-  description:
+  description: is arguably Chicago's most inclusive firm - and we're hiring.  Under the leadership of CEO Marcy Capron (an expert in team-as-family dynamics) and CTO Rebecca Miller-Webster (an expert in pay-equity and positive feedback practices), our 77% woman-identified team seeks talented full-stack engineers, product managers, and design leads.
   pages:
     - sponsors
 
@@ -78,7 +78,7 @@ wtm:
   frontpage: true
   sponsoring: conference
   sponsor_level: platinum
-  description:
+  description: is Google's global program for women in technology and provides visibility, community, and resources to drive innovation and participation in the field.
   pages:
     - sponsors
 
@@ -102,7 +102,7 @@ kcura:
   frontpage: true
   sponsoring: conference
   sponsor_level: gold
-  description:
+  description: is a global company with team members who are driven by our customers to build exceptional software for them to use every day. Our product, called Relativity, handles large volumes of data and helps corporations, law firms, and government agencies solve their own unique data problems. The way we work together is centered on our core values of collaborating, communicating, pushing to exceed expectations (even our own), being humble, and having fun while we do it. We enjoy ourselves, give back, and work (and play) hard together.
   pages:
     - sponsors
 
@@ -114,7 +114,7 @@ devmynd:
   frontpage: true
   sponsoring: conference
   sponsor_level: silver
-  description:
+  description: is an innovation consulting firm in Chicago and San Francisco.  We help our clients solve meaningful business and social challenges with a mix of product strategy, human-centered UI/UX, and high-quality custom software development.  Our talented team of strategists, designers, and engineers work in small, fully client-facing teams to deliver solid and maintainable solutions.
   pages:
     - sponsors
 
