@@ -428,8 +428,6 @@
     Saturday, June 18, 2016
 
   = link_to "All Saturday Talk Descriptions", "#{talks_path}#speak"
-  |
-  %small Please note that Saturday schedule is tentative
 
   %table
     %tr
@@ -441,52 +439,66 @@
       %td
         10:00 am
       %td
-        %p.track__title
-          Career
-        %ul
-          %li
-            = link_to "Cate Huston", "#{speakers_path}#cate-huston"
-            %br
-            "Some things I've learned about color"
-          %li
-            Ashley Powell
-            %br
-            = link_to "Salary Negotiation for Women in Tech", "#{speakers_path}#ashley-powell"
-          %li
-            Allison McMillan
-            %br
-            = link_to "BDD: Baby Driven Development", "#{speakers_path}##allison-mcmillan"
-          %li
-            Iris Amelia Febres
-            %br
-            = link_to "Networking Forever", "#{speakers_path}#iris-amelia-febres"
-
-    %tr.row--all
-      %td
-        1:00pm
-      %td
-        Lunch
+        Welcome, Breakfast, & Mimosas!
 
     %tr
       %td
-        2:00pm
+        10:15 am
       %td
-        %p.track__title
-          Self-Care
-        %ul
-          %li
-            Marylou Lenhart
-            %br
-            = link_to "Posture for Engineers", "#{speakers_path}#marylou-lenhart"
-          %li
-            = link_to "Catherine Dugan,", "#{speakers_path}#catherine-dugan"
-            = link_to "Dannielle Del Rosario,", "#{speakers_path}#dannielle-del-rosario"
-            and
-            = link_to "Lauren Fitzgerald", "#{speakers_path}#lauren-fitzgerald"
-            %br
-            Addressing Emotional Labor in Your Tech Career
+        = link_to "Cate Huston", "#{speakers_path}#cate-huston"
+        %br
+        Some things I've learned about color
+
+    %tr
+      %td
+        11:05 am
+      %td
+        = link_to "Allison McMillan", "#{speakers_path}##allison-mcmillan"
+        %br
+        BDD: Baby Driven Development
+
+    %tr
+      %td
+        11:45
+      %td
+        = link_to "Ashley Powell", "#{speakers_path}#ashley-powell"
+        %br
+        Salary Negotiation for Women in Tech
+
 
     %tr.row--all
-      %td 4:00 pm
       %td
-        End of Conference
+        12:30 pm
+      %td
+        Lunch with Annie Ruggles, Polymathic
+
+    %tr
+      %td
+        1:30 pm
+      %td
+        = link_to "Marylou Lenhart", "#{speakers_path}#marylou-lenhart"
+        %br
+        Posture for Engineers
+
+    %tr
+      %td
+        2:05 pm
+      %td
+        = link_to "Lauren Fitzgerald", "#{speakers_path}#lauren-fitzgerald"
+        %br
+        Addressing Emotional Labor in Your Tech Career
+
+    %tr
+      %td
+        3:10 pm
+      %td
+        = link_to "Iris Amelia Febres", "#{speakers_path}#iris-amelia-febres"
+        %br
+        Networking Forever
+
+
+    %tr
+      %td
+        4:00 pm
+      %td
+        Conference Closing
