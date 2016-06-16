@@ -293,96 +293,117 @@
     %tr
       %th.schedule__time &nbsp;
       %th.schedule__track
-        First-year Track: Code
+        All Tracks
       %th.schedule__track
-        Alumna Track: Project
+        Optional Talks
 
     %tr
       %td 8:00 am
-      %td
+      %td{ colspan: 2 }
         %p.track__title
           Carol Willing
           %br
           = link_to "Intro to Git & Github", "#{speakers_path}#carol-willing"
-          %br
-          %small (Optional)
-      %td
-        %p.track__title
-          Quiet Project Time
-          %br
-          %small (Optional)
+        %br
+        %small (Optional)
 
     %tr.row--all
       %td 9:00 am
       %td{ colspan: 2 }
         %p.track__title
-          Welcome
+          Welcome and Breakfast
 
     %tr.row--keynote
-      %td &nbsp;
+      %td 9:10 am
       %td{ colspan: 2 }
         %p.track__title
           Fureigh
           %br
           = link_to "Civic hacking: build your cred while doing good", "#{speakers_path}#fureigh"
 
+    %tr.row--keynote
+      %td 10:00 am
+      %td{ colspan: 2 }
+        %p.track__title
+          Project Shopping
+
     %tr
-      %td 11:00 am
+      %td 10:35 am
+      %td{ rowspan: 4 }
+        %p.track__title
+          First Years - Code
+          %br
+          Alumna - Project Work
       %td
         %p.track__title
-          Find your OSS Project
-        %ul
-          %li Project intros by women mentors
-          %li
-            Rebecca Miller-Webster
-            %br
-            Intro to Open Source
-            %br
-            %small (Optional)
-          %li
-            Cora Hays-Magan
-            %br
-            = link_to "Getting Over the Open Source Jitters", "#{speakers_path}#cora-hays-magan"
-            %br
-            %small (Optional)
-          %li
-            Tripta Gupta
-            %br
-            = link_to "Give Your Code the Documentation It Deserves: How Documentation Increases Code Quality", "#{speakers_path}#tripta-gupta"
-            %br
-            %small (Optional)
-          %li
-            Liz Abinante
-            %br
-            = link_to "Writing Your First Ruby Gem", "#{speakers_path}#liz-abinante"
-            %br
-            %small (Optional)
+          Rebecca Miller-Webster
+          %br
+          Intro to Open Source
+        %br
+        %small (Optional)
+
+    %tr
+      %td 11:10 am
       %td
         %p.track__title
-          Project Work &amp; Tutoring
-        %ul
-          %li Work on your chosen project
-          %li Office hours/tutoring with women experts in UX, project, marketing, &amp; more
+          Cora Hays-Magan
+          %br
+          = link_to "Getting Over the Open Source Jitters", "#{speakers_path}#cora-hays-magan"
+        %br
+        %small (Optional)
+
+    %tr
+      %td 11:30 am
+      %td
+        %p.track__title
+          Tripta Gupta
+          %br
+          = link_to "Give Your Code the Documentation It Deserves: How Documentation Increases Code Quality", "#{speakers_path}#tripta-gupta"
+        %br
+        %small (Optional)
+
+    %tr
+      %td 11:55 am
+      %td
+        %p.track__title
+          Liz Abinante
+          %br
+          = link_to "Writing Your First Ruby Gem", "#{speakers_path}#liz-abinante"
+        %br
+        %small (Optional)
 
     %tr.row--all
       %td 1:00 pm
       %td{ colspan: 2 }
         Lunch
 
-    %tr
-      %td 2:00 pm
-      %td{ colspan: 2 }
-        Work on your chosen Project
-
-    %tr
-      %td 4:00 pm
-      %td{ colspan: 2 }
-        Alumna Project Demos &amp; Pull Request Raffle
-
     %tr.row--keynote
+      %td 1:50 pm
+      %td{ colspan: 2 }
+        %p.track__title
+          First Years - Code
+          %br
+          Alumna - Project Work
+
+    %tr.row--all
+      %td 3:55 pm
+      %td{ colspan: 2 }
+        Break
+
+    %tr
+      %td 4:35 pm
+      %td{ colspan: 2 }
+        Raffle
+
+    %tr
       %td 5:00 pm
       %td{ colspan: 2 }
-        %p
+        Alumna Presentations
+
+    %tr.row--keynote
+      %td 5:35 pm
+      %td{ colspan: 2 }
+        %p.track__title
           Coraline Ada Ehmke
           %br
           = link_to "Diversity in OSS: Are We As Open As Our Code?", "#{speakers_path}#coraline-ada-ehmke"
@@ -392,10 +413,10 @@
       %td{ colspan: 2 }
         Appreciations &amp; Action Items
 
-    %tr.row--all
-      %td 6:30 pm
+    %tr
+      %td 7:00 pm
       %td{ colspan: 2 }
-        End of Day 3
+        Meetup Chapter Summit @ Breather, 223 W Jackson
 
   %a{ name: 'day4' }
   %h2
